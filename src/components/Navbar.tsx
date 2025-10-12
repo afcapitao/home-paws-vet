@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Heart, Globe } from "lucide-react";
+import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -25,9 +25,8 @@ const Navbar = () => {
     { name: t("nav.blog"), path: "/blog" },
   ];
 
-  const toggleLanguage = () => {
-    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
-    i18n.changeLanguage(newLang);
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
   };
 
   const isActive = (path: string) => location.pathname === path;
@@ -93,18 +92,26 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Language Toggle & CTA */}
+          {/* Language Buttons & CTA */}
           <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleLanguage}
-              className="hidden sm:flex"
-              title={i18n.language === 'pt' ? 'Switch to English' : 'Mudar para Português'}
-            >
-              <Globe className="h-5 w-5" />
-              <span className="sr-only">Toggle language</span>
-            </Button>
+            <div className="hidden sm:flex items-center gap-1 border border-border rounded-md p-1">
+              <Button
+                variant={i18n.language === 'pt' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => changeLanguage('pt')}
+                className="h-8 px-3 text-xs"
+              >
+                PT
+              </Button>
+              <Button
+                variant={i18n.language === 'en' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => changeLanguage('en')}
+                className="h-8 px-3 text-xs"
+              >
+                EN
+              </Button>
+            </div>
             <AppointmentForm>
               <Button variant="hero" size="sm" className="hidden sm:flex">
                 {t("nav.bookButton")}
