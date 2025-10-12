@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "services": "Serviços",
+    "about": "Quem sou",
+    "area": "Área geográfica",
+    "schedule": "Horário",
+    "contacts": "Contactos",
+    "blog": "Blog",
+    "bookButton": "Quero Agendar"
+  },
+  "hero": {
+    "title": "Cuidados Veterinários na Comodidade da Sua Casa",
+    "description": "Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa para consultas, quer de rotina quer de acompanhamento, vacinação e desparasitação, exames laboratoriais.",
+    "feature1": "Exame complementar de ecografia abdominal efetuados por colega especialista",
+    "feature2": "Serviço de cirurgia de tecidos moles e odontologia em clínica parceira",
+    "bookButton": "Quero Agendar",
+    "bookingInfo": "Para agendar basta contactar-me por mensagem via WhatsApp, enviar e-mail ou telefonar no horário de atendimento",
+    "location": "Lisboa e arredores",
+    "hours": "10h às 18h de 2ªf a 6ªf",
+    "noEmergency": "Não atendo emergências"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Cuidados veterinários completos no conforto do seu lar",
+    "consultations": {
+      "title": "Consultas ao Domicílio",
+      "description": "Consultas de rotina e acompanhamento na comodidade da sua casa, evitando stress ao seu animal."
+    },
+    "prophylaxis": {
+      "title": "Vacinação e Desparasitação",
+      "description": "Plano vacinal personalizado e desparasitação regular para manter a saúde do seu animal."
+    },
+    "exams": {
+      "title": "Exames Laboratoriais",
+      "description": "Colheita e análise de exames para diagnóstico preciso e acompanhamento da saúde."
+    },
+    "surgery": {
+      "title": "Cirurgias",
+      "description": "Cirurgias de tecidos moles e odontologia em clínica parceira de confiança."
+    },
+    "bookButton": "Agendar Consulta"
+  },
+  "appointment": {
+    "title": "Agendar Consulta",
+    "description": "Preencha os dados abaixo e entraremos em contacto via WhatsApp.",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome completo",
+    "email": "Email",
+    "emailPlaceholder": "seu@email.com",
+    "phone": "Telefone",
+    "phonePlaceholder": "912 345 678",
+    "petType": "Tipo de Animal",
+    "petTypePlaceholder": "Selecione o tipo de animal",
+    "dog": "Cão",
+    "cat": "Gato",
+    "message": "Motivo da Consulta",
+    "messagePlaceholder": "Descreva brevemente o motivo da consulta...",
+    "submit": "Enviar Pedido",
+    "whatsappMessage": "Olá, gostaria de agendar uma consulta"
+  },
+  "footer": {
+    "tagline": "Cuidados veterinários ao domicílio",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contacto",
+    "phone": "Telefone",
+    "email": "Email",
+    "location": "Localização",
+    "locationValue": "Lisboa e arredores",
+    "rights": "Todos os direitos reservados."
+  },
+  "whatsapp": {
+    "contact": "Contactar via WhatsApp",
+    "defaultMessage": "Olá, gostaria de mais informações"
+  }
+}

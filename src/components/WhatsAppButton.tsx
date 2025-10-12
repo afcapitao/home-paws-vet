@@ -1,8 +1,11 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const WhatsAppButton = () => {
-  const whatsappUrl = "https://wa.me/351SEUNUMERO?text=Olá, gostaria de mais informações";
+  const { t } = useTranslation();
+  const whatsappMessage = encodeURIComponent(t("whatsapp.defaultMessage"));
+  const whatsappUrl = `https://wa.me/351911135981?text=${whatsappMessage}`;
 
   return (
     <a
@@ -16,7 +19,7 @@ const WhatsAppButton = () => {
         className="rounded-full h-14 w-14 shadow-lg hover:shadow-xl transition-all hover:scale-110 bg-[#25D366] hover:bg-[#20BA5A] text-white"
       >
         <MessageCircle className="h-6 w-6" />
-        <span className="sr-only">Contactar via WhatsApp</span>
+        <span className="sr-only">{t("whatsapp.contact")}</span>
       </Button>
     </a>
   );

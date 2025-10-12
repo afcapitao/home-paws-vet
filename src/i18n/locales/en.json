@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "services": "Services",
+    "about": "About",
+    "area": "Service Area",
+    "schedule": "Schedule",
+    "contacts": "Contacts",
+    "blog": "Blog",
+    "bookButton": "Book Now"
+  },
+  "hero": {
+    "title": "Veterinary Care in the Comfort of Your Home",
+    "description": "Home veterinary care for dogs and cats in the comfort and safety of your home for routine and follow-up consultations, vaccination and deworming, laboratory tests.",
+    "feature1": "Complementary abdominal ultrasound examination performed by specialist colleague",
+    "feature2": "Soft tissue surgery and dentistry service at partner clinic",
+    "bookButton": "Book Now",
+    "bookingInfo": "To book, just contact me via WhatsApp message, send an email or call during office hours",
+    "location": "Lisbon and surroundings",
+    "hours": "10am to 6pm Monday to Friday",
+    "noEmergency": "I do not attend emergencies"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete veterinary care in the comfort of your home",
+    "consultations": {
+      "title": "Home Consultations",
+      "description": "Routine and follow-up consultations in the comfort of your home, avoiding stress to your pet."
+    },
+    "prophylaxis": {
+      "title": "Vaccination and Deworming",
+      "description": "Personalized vaccination plan and regular deworming to maintain your pet's health."
+    },
+    "exams": {
+      "title": "Laboratory Tests",
+      "description": "Collection and analysis of tests for accurate diagnosis and health monitoring."
+    },
+    "surgery": {
+      "title": "Surgeries",
+      "description": "Soft tissue surgery and dentistry at trusted partner clinic."
+    },
+    "bookButton": "Book Appointment"
+  },
+  "appointment": {
+    "title": "Book Appointment",
+    "description": "Fill in the details below and we will contact you via WhatsApp.",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "912 345 678",
+    "petType": "Pet Type",
+    "petTypePlaceholder": "Select pet type",
+    "dog": "Dog",
+    "cat": "Cat",
+    "message": "Reason for Consultation",
+    "messagePlaceholder": "Briefly describe the reason for consultation...",
+    "submit": "Send Request",
+    "whatsappMessage": "Hello, I would like to schedule an appointment"
+  },
+  "footer": {
+    "tagline": "Home veterinary care",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Lisbon and surroundings",
+    "rights": "All rights reserved."
+  },
+  "whatsapp": {
+    "contact": "Contact via WhatsApp",
+    "defaultMessage": "Hello, I would like more information"
+  }
+}

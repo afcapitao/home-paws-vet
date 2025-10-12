@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Heart, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,19 +9,26 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { AppointmentForm } from "@/components/AppointmentForm";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const menuItems = [
-    { name: "Serviços", path: "/servicos" },
-    { name: "Quem sou", path: "/quem-sou" },
-    { name: "Área geográfica", path: "/#area" },
-    { name: "Horário", path: "/#horario" },
-    { name: "Contactos", path: "/#contactos" },
-    { name: "Blog", path: "/blog" },
+    { name: t("nav.services"), path: "/servicos" },
+    { name: t("nav.about"), path: "/quem-sou" },
+    { name: t("nav.area"), path: "/#area" },
+    { name: t("nav.schedule"), path: "/#horario" },
+    { name: t("nav.contacts"), path: "/#contactos" },
+    { name: t("nav.blog"), path: "/blog" },
   ];
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
+    i18n.changeLanguage(newLang);
+  };
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -58,7 +65,7 @@ const Navbar = () => {
               <DropdownMenuTrigger asChild className="hidden md:flex">
                 <Button variant="ghost">
                   <Menu className="h-5 w-5 mr-2" />
-                  Menu
+                  {t("nav.menu")}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
@@ -86,12 +93,24 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* CTA Button */}
-          <AppointmentForm>
-            <Button variant="hero" size="sm" className="hidden sm:flex">
-              Quero Agendar
+          {/* Language Toggle & CTA */}
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLanguage}
+              className="hidden sm:flex"
+              title={i18n.language === 'pt' ? 'Switch to English' : 'Mudar para Português'}
+            >
+              <Globe className="h-5 w-5" />
+              <span className="sr-only">Toggle language</span>
             </Button>
-          </AppointmentForm>
+            <AppointmentForm>
+              <Button variant="hero" size="sm" className="hidden sm:flex">
+                {t("nav.bookButton")}
+              </Button>
+            </AppointmentForm>
+          </div>
         </div>
       </div>
     </nav>

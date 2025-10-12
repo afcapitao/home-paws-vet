@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useTranslation } from "react-i18next";
 import {
   Dialog,
   DialogContent,
@@ -41,6 +42,7 @@ type FormData = z.infer<typeof formSchema>;
 
 export function AppointmentForm({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -54,15 +56,15 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
   });
 
   const onSubmit = (data: FormData) => {
-    const whatsappMessage = `Olá, gostaria de agendar uma consulta
+    const whatsappMessage = `${t("appointment.whatsappMessage")}
 
-*Nome:* ${data.name}
-*Email:* ${data.email}
-*Telefone:* ${data.phone}
-*Tipo de Animal:* ${data.petType}
-*Mensagem:* ${data.message}`;
+*${t("appointment.name")}:* ${data.name}
+*${t("appointment.email")}:* ${data.email}
+*${t("appointment.phone")}:* ${data.phone}
+*${t("appointment.petType")}:* ${data.petType}
+*${t("appointment.message")}:* ${data.message}`;
 
-    const whatsappUrl = `https://wa.me/351SEUNUMERO?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/351911135981?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, "_blank");
     setOpen(false);
     form.reset();
@@ -73,9 +75,9 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>Agendar Consulta</DialogTitle>
+          <DialogTitle>{t("appointment.title")}</DialogTitle>
           <DialogDescription>
-            Preencha os dados abaixo e entraremos em contacto via WhatsApp.
+            {t("appointment.description")}
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -85,9 +87,9 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Nome</FormLabel>
+                  <FormLabel>{t("appointment.name")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="Seu nome completo" {...field} />
+                    <Input placeholder={t("appointment.namePlaceholder")} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -99,9 +101,9 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{t("appointment.email")}</FormLabel>
                   <FormControl>
-                    <Input type="email" placeholder="seu@email.com" {...field} />
+                    <Input type="email" placeholder={t("appointment.emailPlaceholder")} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -113,9 +115,9 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Telefone</FormLabel>
+                  <FormLabel>{t("appointment.phone")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="912 345 678" {...field} />
+                    <Input placeholder={t("appointment.phonePlaceholder")} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -127,16 +129,16 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
               name="petType"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Tipo de Animal</FormLabel>
+                  <FormLabel>{t("appointment.petType")}</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Selecione o tipo de animal" />
+                        <SelectValue placeholder={t("appointment.petTypePlaceholder")} />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="Cão">Cão</SelectItem>
-                      <SelectItem value="Gato">Gato</SelectItem>
+                      <SelectItem value={t("appointment.dog")}>{t("appointment.dog")}</SelectItem>
+                      <SelectItem value={t("appointment.cat")}>{t("appointment.cat")}</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -149,10 +151,10 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Motivo da Consulta</FormLabel>
+                  <FormLabel>{t("appointment.message")}</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Descreva brevemente o motivo da consulta..."
+                      placeholder={t("appointment.messagePlaceholder")}
                       className="resize-none"
                       rows={4}
                       {...field}
@@ -164,7 +166,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
             />
 
             <Button type="submit" className="w-full" variant="hero">
-              Enviar Pedido
+              {t("appointment.submit")}
             </Button>
           </form>
         </Form>
