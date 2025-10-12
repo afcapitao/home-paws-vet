@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { AppointmentForm } from "@/components/AppointmentForm";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,15 +87,11 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <a
-            href="https://wa.me/351SEUNUMERO?text=Olá, gostaria de agendar uma consulta"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <AppointmentForm>
             <Button variant="hero" size="sm" className="hidden sm:flex">
               Quero Agendar
             </Button>
-          </a>
+          </AppointmentForm>
         </div>
       </div>
     </nav>
