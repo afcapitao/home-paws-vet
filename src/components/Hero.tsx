@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 import heroImage from "@/assets/hero-vet.jpg";
+import { AppointmentForm } from "@/components/AppointmentForm";
 
 const Hero = () => {
   return (
@@ -28,15 +29,11 @@ const Hero = () => {
               </li>
             </ul>
 
-            <a
-              href="https://wa.me/351SEUNUMERO?text=Olá, gostaria de agendar uma consulta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <AppointmentForm>
               <Button variant="hero" size="xl" className="mt-4">
                 Quero Agendar
               </Button>
-            </a>
+            </AppointmentForm>
 
             <div className="pt-6 space-y-3 text-sm text-muted-foreground">
               <p className="font-medium text-foreground">
