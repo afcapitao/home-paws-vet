@@ -128,7 +128,7 @@ const Services = () => {
                   <CardTitle>Vacinação e Desparasitação</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p>
+                  <p className="text-justify">
                     A vacinação é fundamental para prevenir doenças infecto-contagiosas. Faço um plano vacinal 
                     adaptado à sua idade e ao seu estilo de vida. As desparasitações também são muito importantes 
                     para a manutenção da saúde.
@@ -150,7 +150,7 @@ const Services = () => {
                       </li>
                     </ul>
                   </div>
-                  <p className="text-sm">
+                  <p className="text-sm text-justify">
                     <strong>Importante:</strong> A vacinação é feita apenas em animais saudáveis, que não 
                     apresentem sintomas de doença e que se encontrem corretamente desparasitados interna e 
                     externamente.
@@ -173,16 +173,17 @@ const Services = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p>
+                  <p className="text-justify">
                     Vai viajar? É importante planear com meses de antecedência para garantir que tudo está em 
                     ordem, sobretudo se for viajar para fora do país.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Faço consulta com emissão de passaporte (necessário para viajar dentro da U.E.), exame 
-                    físico completo, atualizo o estado vacinal, nomeadamente aplicação e registo da vacina da 
+                    físico completo, atualizo o estado vacinal nomeadamente aplicação e registo da vacina da 
                     raiva, colheita de sangue para a análise da titulação dos anticorpos da raiva caso seja 
-                    necessário, desparasitação e passo atestado que atesta o bem-estar e aptidão do animal 
-                    para viajar.
+                    necessário, desparasitação e passo atestado modelo 1452 que atesta o bem estar e aptidão do animal 
+                    para viajar, que terá de ser apresentado ao veterinário oficial. 
+                    Deverá contactar a companhia aérea em que irá viajar para saber se são necessários mais alguns requisitos específicos.
                   </p>
                 </CardContent>
               </Card>
