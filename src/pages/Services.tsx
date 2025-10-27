@@ -38,13 +38,13 @@ const Services = () => {
                   <CardTitle>Consultas de Clínica Geral</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p>
+                  <p className="text-justify">
                     Faço consultas de clínica geral, de rotina e de acompanhamento ao seu animal na 
                     comodidade e segurança do seu espaço, evitando ansiedade e desconfortos desnecessários 
                     associados à deslocação a uma clínica e evitando filas de espera e contacto com outros 
                     animais e respectivo risco de contrair doenças infecto-contagiosas.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Estas consultas consistem na obtenção do historial detalhado (anamnese), conversando 
                     com os tutores, avaliação cuidadosa dos sintomas apresentados, exame físico completo e 
                     alguns exames que possam ser necessários para complementar o diagnóstico e orientar o tratamento.
@@ -57,7 +57,7 @@ const Services = () => {
                       a desenvolver e atuar na prevenção ou atrasando a progressão da doença.
                     </p>
                   </div>
-                  <p className="font-medium text-foreground">
+                  <p className="font-medium text-foreground text-justify">
                     Não espere que os sintomas do seu animal piorem para entrar em contacto, envie uma 
                     mensagem e agende a sua consulta.
                   </p>
