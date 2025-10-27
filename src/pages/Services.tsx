@@ -66,24 +66,24 @@ const Services = () => {
 
               <div className="grid md:grid-cols-3 gap-4 mb-8">
                 <Card>
-                  <CardHeader>
-                    <Heart className="h-6 w-6 text-primary mb-2" />
+                  <CardHeader className="text-center">
+                    <Heart className="h-6 w-6 text-primary mb-2 mx-auto" />
                     <CardTitle className="text-lg">Acompanhamento</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>
+                    <CardDescription className="text-justify">
                       Consultas fundamentais para observar a evolução da doença e avaliar a resposta ao tratamento.
                     </CardDescription>
                   </CardContent>
                 </Card>
 
                 <Card>
-                  <CardHeader>
-                    <Baby className="h-6 w-6 text-primary mb-2" />
+                  <CardHeader className="text-center">
+                    <Baby className="h-6 w-6 text-primary mb-2 mx-auto" />
                     <CardTitle className="text-lg">Pediátricas</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>
+                    <CardDescription className="text-justify">
                       Para animais jovens, reduzindo o risco de exposição a agentes infecto-contagiosos durante 
                       o protocolo vacinal inicial.
                     </CardDescription>
@@ -91,12 +91,12 @@ const Services = () => {
                 </Card>
 
                 <Card>
-                  <CardHeader>
-                    <Users className="h-6 w-6 text-primary mb-2" />
+                  <CardHeader className="text-center">
+                    <Users className="h-6 w-6 text-primary mb-2 mx-auto" />
                     <CardTitle className="text-lg">Geriátricas</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>
+                    <CardDescription className="text-justify">
                       Para animais idosos com dificuldades locomotoras ou mais sensíveis a mudanças no ambiente.
                     </CardDescription>
                   </CardContent>
