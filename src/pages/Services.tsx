@@ -16,7 +16,7 @@ const Services = () => {
         <section className="bg-gradient-hero py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Nossos Serviços
+              Serviços
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Cuidados veterinários completos ao domicílio para o seu animal de estimação
