@@ -213,25 +213,11 @@ const Services = () => {
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    Trabalho com uma clínica parceira para realização de procedimentos cirúrgicos de tecidos 
-                    moles (castração, esterilização, lumpectomias/nodulectomias, mastectomias, enterectomias), 
-                    e também de odontologia como destartarizações.
+                    Trabalho com uma clínica parceira para realização de procedimentos cirúrgicos de tecidos moles programados de rotina, não-emergenciais (castração, esterilização, lumpectomias/nodulectomias, mastectomias, enterectomias), e para realização de procedimentos de higienização oral sob anestesia geral (destartarizações).
                   </p>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Como funciona:</h4>
-                    <p>
-                      Faço uma consulta pré-cirúrgica, com história detalhada, exame físico completo, colheita 
-                      de material para análises sanguíneas. Se estiver tudo bem, avançamos para o procedimento.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Acompanhamento completo:</h4>
-                    <p>
-                      Faço o transporte até à clínica, todo o procedimento com anestesia monitorizada, e o 
-                      transporte de volta para casa. Entrego a medicação e faço consultas de acompanhamento 
-                      pós-operatório até recuperação completa.
-                    </p>
-                  </div>
+                  <p>
+                    Faço a consulta pré-operatória e as consultas de acompanhamento pós-operatório até recuperação completa.
+                  </p>
                 </CardContent>
               </Card>
             </div>
