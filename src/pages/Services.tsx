@@ -50,11 +50,11 @@ const Services = () => {
                     alguns exames que possam ser necessários para complementar o diagnóstico e orientar o tratamento.
                   </p>
                   <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-                    <p className="text-foreground font-medium">
+                    <p className="text-foreground font-medium text-justify">
                       As consultas de rotina e de check-up são muito importantes porque algumas condições de 
-                      saúde começam subtilmente, mas fazendo o exame clínico e análises laboratoriais com 
-                      regularidade poderemos obter pistas mais precocemente de alguma condição que se possa 
-                      estar a desenvolver e atuar na prevenção ou atrasando a progressão da doença.
+                      saúde começam subtilmente. Ao fazer o exame clínico e análises laboratoriais com 
+                      regularidade podemos obter pistas mais precocemente de alguma condição que se esteja 
+                      a desenvolver e atuar na prevenção ou atrasando a progressão da doença.
                     </p>
                   </div>
                   <p className="font-medium text-foreground">
