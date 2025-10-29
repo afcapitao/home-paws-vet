@@ -46,11 +46,13 @@ const Hero = () => {
               )}
             </ul>
 
-            <AppointmentForm>
-              <Button variant="hero" size="xl" className="mt-4">
-                {t("hero.bookButton")}
-              </Button>
-            </AppointmentForm>
+            <div className="flex justify-center">
+              <AppointmentForm>
+                <Button variant="hero" size="xl" className="mt-4">
+                  {t("hero.bookButton")}
+                </Button>
+              </AppointmentForm>
+            </div>
 
             <div className="pt-6 space-y-3 text-sm text-muted-foreground">
               <p className="font-medium text-foreground">
