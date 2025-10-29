@@ -32,6 +32,18 @@ const Hero = () => {
                   <span>{t("hero.feature2")}</span>
                 </li>
               )}
+              {t("hero.feature3", { defaultValue: "" }) && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span>{t("hero.feature3")}</span>
+                </li>
+              )}
+              {t("hero.feature4", { defaultValue: "" }) && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span>{t("hero.feature4")}</span>
+                </li>
+              )}
             </ul>
 
             <AppointmentForm>
