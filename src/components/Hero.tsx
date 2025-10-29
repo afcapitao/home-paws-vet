@@ -20,14 +20,18 @@ const Hero = () => {
               {t("hero.description")}
             </p>
             <ul className="space-y-3 text-foreground">
-              <li className="flex items-start gap-2">
-                <div className="mt-1 text-primary">✓</div>
-                <span>{t("hero.feature1")}</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <div className="mt-1 text-primary">✓</div>
-                <span>{t("hero.feature2")}</span>
-              </li>
+              {t("hero.feature1") && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span>{t("hero.feature1")}</span>
+                </li>
+              )}
+              {t("hero.feature2", { defaultValue: "" }) && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span>{t("hero.feature2")}</span>
+                </li>
+              )}
             </ul>
 
             <AppointmentForm>
