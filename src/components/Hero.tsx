@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 import heroImage from "@/assets/hero-vet.jpg";
 import { AppointmentForm } from "@/components/AppointmentForm";
 import { useTranslation } from "react-i18next";
+import ServiceAreaMap from "@/components/ServiceAreaMap";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -54,20 +55,21 @@ const Hero = () => {
               </AppointmentForm>
             </div>
 
-            <div className="pt-6 space-y-3 text-sm text-muted-foreground">
+            <div className="pt-6 space-y-4 text-sm text-muted-foreground">
               <p className="font-medium text-foreground">
                 {t("hero.bookingInfo")}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-primary" />
-                  <span>{t("hero.location")}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-primary" />
-                  <span>{t("hero.hours")}</span>
-                </div>
+              
+              <div className="space-y-3">
+                <h3 className="font-semibold text-foreground">Áreas de Atuação:</h3>
+                <ServiceAreaMap />
               </div>
+
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-primary" />
+                <span>{t("hero.hours")}</span>
+              </div>
+              
               <p className="text-muted-foreground italic">{t("hero.noEmergency")}</p>
             </div>
           </div>
