@@ -11,9 +11,9 @@
   },
   "hero": {
     "title": "Cuidados Veterinários na Comodidade da Sua Casa",
-    "description": "Atendimento médico-veterinário ao domicilio de cães e gatos na comodidade e segurança da sua casa para consultas, vacinação e desparasitação.",
-    "feature1": "Exame complementar de ecografia abdominal efetuados por colega especialista",
-    "feature2": "Serviço de cirurgia de tecidos moles e odontologia em clínica parceira",
+    "description": "Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa para consultas, vacinação e desparasitação, exames laboratoriais.",
+    "feature1": "Serviço de Imagiologia (ecografia abdominal efetuada por colega especialista, radiologia efetuada em clínica parceira)",
+    "feature2": "Serviço de cirurgia de tecidos moles e higienização oral em clínica parceira",
     "bookButton": "Quero Agendar",
     "bookingInfo": "Para agendar basta contactar-me por mensagem via WhatsApp, enviar e-mail ou telefonar no horário de atendimento",
     "location": "Lisboa e arredores",
