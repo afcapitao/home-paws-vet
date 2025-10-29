@@ -16,7 +16,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               {t("hero.title")}
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               {t("hero.description")}
             </p>
             <ul className="space-y-3 text-foreground">
