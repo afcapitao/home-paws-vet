@@ -62,9 +62,9 @@ const Hero = () => {
               <div className="space-y-2">
                 <h3 className="font-semibold text-foreground">Áreas de Atuação:</h3>
                 <div className="text-sm space-y-1">
-                  <p><span className="font-medium">Lisboa Oriental e Norte:</span> Ameixoeira e Charneca, Alvalade, Areeiro, Alta de Lisboa, Benfica, Carnide, Lumiar, Marvila, Olivais, Parque das Nações;</p>
-                  <p><span className="font-medium">Loures:</span> Moscavide e Portela, Sacavém e Prior Velho, Sª Iria de Azóia, São João da Talha e Bobadela, Camarate, Unhos e Apelação.</p>
-                  <p><span className="font-medium">Vila Franca de Xira:</span> Póvoa de Santa Iria, Forte da Casa, Vialonga, Alverca do Ribatejo</p>
+                  <p>Ameixoeira e Charneca, Alvalade, Areeiro, Alta de Lisboa, Benfica, Carnide, Lumiar, Marvila, Olivais, Parque das Nações;</p>
+                  <p>Moscavide e Portela, Sacavém e Prior Velho, Sª Iria de Azóia, São João da Talha e Bobadela, Camarate, Unhos e Apelação.</p>
+                  <p>Póvoa de Santa Iria, Forte da Casa, Vialonga, Alverca do Ribatejo</p>
                 </div>
               </div>
 
