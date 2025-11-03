@@ -27,12 +27,20 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/servicos" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  to="/servicos" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   {t("nav.services")}
                 </Link>
               </li>
               <li>
-                <Link to="/quem-sou" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  to="/quem-sou" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   {t("nav.about")}
                 </Link>
               </li>
