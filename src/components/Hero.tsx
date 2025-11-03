@@ -11,16 +11,16 @@ const Hero = () => {
     <section className="relative bg-gradient-hero overflow-hidden">
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="space-y-8">
-          {/* Title and Description with Image */}
+          {/* Title */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            {t("hero.title")}
+          </h1>
+
+          {/* Description with Image */}
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                {t("hero.title")}
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                {t("hero.description")}
-              </p>
-            </div>
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+              {t("hero.description")}
+            </p>
 
             {/* Image */}
             <div className="relative">
