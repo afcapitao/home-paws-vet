@@ -26,11 +26,19 @@
     "subtitle": "Cuidados veterinários completos no conforto do seu lar",
     "consultations": {
       "title": "Consultas ao Domicílio",
-      "description": "Consultas de rotina e acompanhamento na comodidade da sua casa, evitando stress ao seu animal."
+      "description": "Consultas de clínica geral, de rotina e acompanhamento na comodidade da sua casa, reduzindo ansiedade ao seu animal."
+    },
+    "microchip": {
+      "title": "Microchip",
+      "description": "Colocação e registo de microchip na base de dados nacional"
     },
     "prophylaxis": {
       "title": "Vacinação e Desparasitação",
       "description": "Plano vacinal personalizado e desparasitação regular para manter a saúde do seu animal."
+    },
+    "imaging": {
+      "title": "Exames de Imagem",
+      "description": "Ecografia abdominal realizada por colega especialista, radiografias realizadas em clínica parceira"
     },
     "exams": {
       "title": "Exames Laboratoriais",
@@ -38,7 +46,7 @@
     },
     "surgery": {
       "title": "Cirurgias",
-      "description": "Cirurgias de tecidos moles e odontologia em clínica parceira de confiança."
+      "description": "Cirurgias de tecidos moles e higienização oral em clínica parceira de confiança."
     },
     "bookButton": "Agendar Consulta"
   },

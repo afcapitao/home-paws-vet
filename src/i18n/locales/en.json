@@ -25,11 +25,19 @@
     "subtitle": "Complete veterinary care in the comfort of your home",
     "consultations": {
       "title": "Home Consultations",
-      "description": "Routine and follow-up consultations in the comfort of your home, avoiding stress to your pet."
+      "description": "General clinic, routine and follow-up consultations in the comfort of your home, reducing anxiety to your pet."
+    },
+    "microchip": {
+      "title": "Microchip",
+      "description": "Microchip placement and registration in the national database"
     },
     "prophylaxis": {
       "title": "Vaccination and Deworming",
       "description": "Personalized vaccination plan and regular deworming to maintain your pet's health."
+    },
+    "imaging": {
+      "title": "Imaging Exams",
+      "description": "Abdominal ultrasound performed by specialist colleague, radiographs performed at partner clinic"
     },
     "exams": {
       "title": "Laboratory Tests",
@@ -37,7 +45,7 @@
     },
     "surgery": {
       "title": "Surgeries",
-      "description": "Soft tissue surgery and dentistry at trusted partner clinic."
+      "description": "Soft tissue surgery and oral hygiene at trusted partner clinic."
     },
     "bookButton": "Book Appointment"
   },

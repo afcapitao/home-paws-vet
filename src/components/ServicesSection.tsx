@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import { Stethoscope, Syringe, FileCheck, Scissors } from "lucide-react";
+import { Stethoscope, Syringe, FileCheck, Scissors, Radio, ScanLine } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ServicesSection = () => {
@@ -12,9 +12,19 @@ const ServicesSection = () => {
       description: t("services.consultations.description"),
     },
     {
+      icon: Radio,
+      title: t("services.microchip.title"),
+      description: t("services.microchip.description"),
+    },
+    {
       icon: Syringe,
       title: t("services.prophylaxis.title"),
       description: t("services.prophylaxis.description"),
+    },
+    {
+      icon: ScanLine,
+      title: t("services.imaging.title"),
+      description: t("services.imaging.description"),
     },
     {
       icon: FileCheck,
@@ -40,7 +50,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
