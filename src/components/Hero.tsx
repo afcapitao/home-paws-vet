@@ -10,15 +10,32 @@ const Hero = () => {
   return (
     <section className="relative bg-gradient-hero overflow-hidden">
       <div className="container mx-auto px-4 py-12 md:py-20">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Content */}
+        <div className="space-y-8">
+          {/* Title and Description with Image */}
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                {t("hero.title")}
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                {t("hero.description")}
+              </p>
+            </div>
+
+            {/* Image */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-medium">
+                <img
+                  src={heroImage}
+                  alt="Veterinária atendendo cachorro em casa"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Features and Rest of Content */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              {t("hero.title")}
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-              {t("hero.description")}
-            </p>
             <ul className="space-y-3 text-foreground">
               {t("hero.feature1") && (
                 <li className="flex items-start gap-2">
@@ -74,17 +91,6 @@ const Hero = () => {
               </div>
               
               <p className="text-muted-foreground italic">{t("hero.noEmergency")}</p>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-medium">
-              <img
-                src={heroImage}
-                alt="Veterinária atendendo cachorro em casa"
-                className="w-full h-auto object-cover"
-              />
             </div>
           </div>
         </div>
