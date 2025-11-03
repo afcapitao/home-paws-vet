@@ -30,7 +30,7 @@
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Colocação e registo de microchip na base de dados nacional"
+      "description": "Colocação e registo de microchip na base de dados nacional."
     },
     "prophylaxis": {
       "title": "Vacinação e Desparasitação",
@@ -38,7 +38,7 @@
     },
     "imaging": {
       "title": "Exames de Imagem",
-      "description": "Ecografia abdominal realizada por colega especialista, radiografias realizadas em clínica parceira"
+      "description": "Ecografia abdominal realizada por colega especialista, radiografias realizadas em clínica parceira."
     },
     "exams": {
       "title": "Exames Laboratoriais",

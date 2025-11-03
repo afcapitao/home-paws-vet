@@ -29,7 +29,7 @@
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Microchip placement and registration in the national database"
+      "description": "Microchip placement and registration in the national database."
     },
     "prophylaxis": {
       "title": "Vaccination and Deworming",
@@ -37,7 +37,7 @@
     },
     "imaging": {
       "title": "Imaging Exams",
-      "description": "Abdominal ultrasound performed by specialist colleague, radiographs performed at partner clinic"
+      "description": "Abdominal ultrasound performed by specialist colleague, radiographs performed at partner clinic."
     },
     "exams": {
       "title": "Laboratory Tests",
