@@ -88,9 +88,14 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div id="horario" className="flex items-center gap-2 scroll-mt-20">
-                <Clock className="h-4 w-4 text-primary" />
-                <span>{t("hero.hours")}</span>
+              <div id="horario" className="space-y-2 scroll-mt-20">
+                <div className="flex items-start gap-2">
+                  <Clock className="h-4 w-4 text-primary mt-0.5" />
+                  <h3 className="font-semibold text-foreground">Horário de Atendimento:</h3>
+                </div>
+                <div className="text-sm">
+                  <p>{t("hero.hours")}</p>
+                </div>
               </div>
               
               <p className="text-muted-foreground italic">{t("hero.noEmergency")}</p>
