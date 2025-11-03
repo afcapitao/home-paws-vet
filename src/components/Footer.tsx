@@ -45,7 +45,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  to="/blog" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   {t("nav.blog")}
                 </Link>
               </li>
