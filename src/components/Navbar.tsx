@@ -31,20 +31,6 @@ const Navbar = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const handleHashClick = (hash: string) => {
-    setIsOpen(false);
-    if (location.pathname === '/') {
-      // Se já estamos na home, apenas fazemos scroll
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    } else {
-      // Se não estamos na home, navegamos e depois fazemos scroll
-      window.location.href = `/${hash}`;
-    }
-  };
-
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4">
@@ -59,14 +45,16 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
                 {menuItems.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild={!item.path.startsWith('/#')}>
+                  <DropdownMenuItem key={item.name} asChild>
                     {item.path.startsWith('/#') ? (
-                      <button
-                        onClick={() => handleHashClick(item.path.substring(1))}
-                        className="w-full text-left cursor-pointer px-2 py-1.5 text-sm outline-none hover:bg-accent"
+                      <a
+                        href={item.path}
+                        className={`cursor-pointer ${
+                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
+                        }`}
                       >
                         {item.name}
-                      </button>
+                      </a>
                     ) : (
                       <Link
                         to={item.path}
@@ -92,14 +80,16 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
                 {menuItems.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild={!item.path.startsWith('/#')}>
+                  <DropdownMenuItem key={item.name} asChild>
                     {item.path.startsWith('/#') ? (
-                      <button
-                        onClick={() => handleHashClick(item.path.substring(1))}
-                        className="w-full text-left cursor-pointer px-2 py-1.5 text-sm outline-none hover:bg-accent"
+                      <a
+                        href={item.path}
+                        className={`cursor-pointer ${
+                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
+                        }`}
                       >
                         {item.name}
-                      </button>
+                      </a>
                     ) : (
                       <Link
                         to={item.path}
