@@ -46,14 +46,25 @@ const Navbar = () => {
               <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
                 {menuItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
-                    <Link
-                      to={item.path}
-                      className={`cursor-pointer ${
-                        isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
+                    {item.path.startsWith('/#') ? (
+                      <a
+                        href={item.path}
+                        className={`cursor-pointer ${
+                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
+                        }`}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={item.path}
+                        className={`cursor-pointer ${
+                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -70,14 +81,25 @@ const Navbar = () => {
               <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
                 {menuItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
-                    <Link
-                      to={item.path}
-                      className={`cursor-pointer ${
-                        isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
+                    {item.path.startsWith('/#') ? (
+                      <a
+                        href={item.path}
+                        className={`cursor-pointer ${
+                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
+                        }`}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={item.path}
+                        className={`cursor-pointer ${
+                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
