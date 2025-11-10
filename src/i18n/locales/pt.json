@@ -23,7 +23,7 @@
   },
   "services": {
     "title": "Serviços",
-    "subtitle": "Cuidados veterinários completos no conforto do seu lar",
+    "subtitle": "Cuidados veterinários no conforto do seu lar",
     "consultations": {
       "title": "Consultas ao Domicílio",
       "description": "Consultas de clínica geral, de rotina e acompanhamento na comodidade da sua casa, reduzindo ansiedade ao seu animal."
@@ -35,6 +35,10 @@
     "prophylaxis": {
       "title": "Vacinação e Desparasitação",
       "description": "Plano vacinal personalizado e desparasitação regular para manter a saúde do seu animal."
+    },
+    "healthCertificate": {
+      "title": "Atestados de saúde e Passaporte",
+      "description": "Emissão de atestados de saúde e passaportes europeus para viagens com o seu animal de estimação."
     },
     "imaging": {
       "title": "Exames de Imagem",
