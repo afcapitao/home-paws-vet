@@ -22,6 +22,11 @@ const ServicesSection = () => {
       description: t("services.prophylaxis.description"),
     },
     {
+      icon: FileText,
+      title: t("services.healthCertificate.title"),
+      description: t("services.healthCertificate.description"),
+    },
+    {
       icon: ScanLine,
       title: t("services.imaging.title"),
       description: t("services.imaging.description"),
@@ -30,11 +35,6 @@ const ServicesSection = () => {
       icon: Microscope,
       title: t("services.exams.title"),
       description: t("services.exams.description"),
-    },
-    {
-      icon: FileText,
-      title: t("services.healthCertificate.title"),
-      description: t("services.healthCertificate.description"),
     },
     {
       icon: Scissors,
