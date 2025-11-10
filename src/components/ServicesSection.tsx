@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import { Stethoscope, Syringe, FileCheck, Scissors, Radio, ScanLine } from "lucide-react";
+import { Stethoscope, Syringe, Radio } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ServicesSection = () => {
@@ -20,21 +20,6 @@ const ServicesSection = () => {
       icon: Syringe,
       title: t("services.prophylaxis.title"),
       description: t("services.prophylaxis.description"),
-    },
-    {
-      icon: ScanLine,
-      title: t("services.imaging.title"),
-      description: t("services.imaging.description"),
-    },
-    {
-      icon: FileCheck,
-      title: t("services.exams.title"),
-      description: t("services.exams.description"),
-    },
-    {
-      icon: Scissors,
-      title: t("services.surgery.title"),
-      description: t("services.surgery.description"),
     },
   ];
 
