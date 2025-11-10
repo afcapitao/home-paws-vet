@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope, Heart, Baby, Users, Syringe, FileCheck, Sparkles, Scissors } from "lucide-react";
+import { Stethoscope, Heart, Baby, Users, Syringe, FileCheck, Sparkles, ScanLine, Scissors } from "lucide-react";
 
 const Services = () => {
   const whatsappLink = "https://wa.me/351SEUNUMERO?text=Olá, gostaria de agendar uma consulta";
@@ -201,6 +201,22 @@ const Services = () => {
                     País. Trata-se de uma cápsula do tamanho de um bago de arroz, que contém um número 
                     específico. Permite, caso o animal se perca e seja encontrado, a identificação e contacto 
                     com o tutor através da base de dados nacional.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-2">
+                    <ScanLine className="h-6 w-6 text-primary" />
+                    <CardTitle>Exames de Imagem</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  <p className="text-justify">
+                    Ecografia abdominal realizada por colega especialista e radiografias realizadas em clínica 
+                    parceira. Estes exames complementares são fundamentais para um diagnóstico preciso e 
+                    planeamento adequado do tratamento do seu animal de estimação.
                   </p>
                 </CardContent>
               </Card>
