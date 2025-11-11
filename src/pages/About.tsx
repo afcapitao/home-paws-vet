@@ -83,10 +83,10 @@ const About = () => {
               <div className="mt-8 text-center" id="area">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Área de Atuação</h3>
                 <p className="text-muted-foreground mb-2">
-                  Atendo em Lisboa e arredores, sempre no horário das 10h às 18h, de segunda a sexta-feira.
+                  Atendo em Lisboa Norte e Oriental, Loures, Vila Franca de Xira, sempre no horário das 10h às 18h, de segunda a sexta-feira.
                 </p>
                 <p className="text-muted-foreground italic text-sm">
-                  Nota: Não atendo emergências. Em caso de urgência, procure um hospital veterinário.
+                  Nota: Não atendo emergências. Em caso de urgência, dirija-se ao hospital veterinário.
                 </p>
               </div>
             </div>
