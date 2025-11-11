@@ -28,15 +28,6 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link 
-                  to="/servicos" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  {t("nav.services")}
-                </Link>
-              </li>
-              <li>
-                <Link 
                   to="/quem-sou" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => window.scrollTo(0, 0)}
@@ -79,6 +70,10 @@ const Footer = () => {
                 <a href="mailto:contato@pethomevet.pt" className="hover:text-primary transition-colors">
                   contato@pethomevet.pt
                 </a>
+              </li>
+              <li className="flex items-start gap-2 text-muted-foreground">
+                <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>Lisboa Oriental e Norte, Loures, Vila Franca de Xira</span>
               </li>
             </ul>
           </div>
