@@ -181,8 +181,8 @@ const Services = () => {
                     Faço consulta com emissão de passaporte (necessário para viajar dentro da U.E.), exame 
                     físico completo, atualizo o estado vacinal nomeadamente aplicação e registo da vacina da 
                     raiva, colheita de sangue para a análise da titulação dos anticorpos da raiva caso seja 
-                    necessário, desparasitação e passo atestado modelo 1452 que atesta o bem estar e aptidão do animal 
-                    para viajar, que terá de ser apresentado ao veterinário oficial. 
+                    necessário, desparasitação e passo o atestado que atesta o bem-estar e aptidão do animal 
+                    para viajar, que terá de ser apresentado ao veterinário oficial.
                     Deverá contactar a companhia aérea em que irá viajar para saber se são necessários mais alguns requisitos específicos.
                   </p>
                 </CardContent>
