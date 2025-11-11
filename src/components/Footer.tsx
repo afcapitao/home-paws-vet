@@ -51,10 +51,6 @@ const Footer = () => {
           <div id="contactos">
             <h3 className="font-semibold text-foreground mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span>{t("footer.locationValue")}</span>
-              </li>
               <li className="flex items-start gap-2 text-muted-foreground" id="horario">
                 <Clock className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>{t("hero.hours")}</span>
