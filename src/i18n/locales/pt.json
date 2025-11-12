@@ -87,5 +87,8 @@
   "whatsapp": {
     "contact": "Contactar via WhatsApp",
     "defaultMessage": "Olá, gostaria de mais informações"
+  },
+  "about": {
+    "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia, com especial interesse em clínica de proximidade, focando o bem-estar animal, a prevenção e diagnóstico de doenças, e que procuro proporcionar esses cuidados ao domicílio, de forma a trazer conforto não só aos animais mas também praticidade e comodidade aos seus tutores."
   }
 }

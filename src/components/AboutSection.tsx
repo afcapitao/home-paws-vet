@@ -1,13 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { User } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-            Quem sou
+            {t("nav.about")}
           </h2>
           
           <Card className="overflow-hidden">
@@ -22,7 +25,7 @@ const AboutSection = () => {
               {/* Description */}
               <div className="flex flex-col justify-center space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                  Formada na Faculdade de Medicina Veterinária da Universidade Técnica de Lisboa. Experiência de 10 anos em clínica de pequenos animais de companhia.
+                  {t("about.description")}
                 </p>
               </div>
             </div>
