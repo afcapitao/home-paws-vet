@@ -17,6 +17,7 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   const menuItems = [
+    { name: t("nav.services"), path: "/#servicos" },
     { name: t("nav.about"), path: "/quem-sou" },
     { name: t("nav.area"), path: "/#area" },
     { name: t("nav.schedule"), path: "/#horario" },
