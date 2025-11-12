@@ -19,7 +19,7 @@ const Navbar = () => {
   const menuItems = [
     { name: t("nav.home"), path: "/" },
     { name: t("nav.services"), path: "/#servicos" },
-    { name: t("nav.about"), path: "/quem-sou" },
+    { name: t("nav.about"), path: "/#quem-sou" },
     { name: t("nav.area"), path: "/#area" },
     { name: t("nav.schedule"), path: "/#horario" },
     { name: t("nav.contacts"), path: "/#contactos" },
