@@ -28,7 +28,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link 
-                  to="/quem-sou" 
+                  to="/#quem-sou" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => window.scrollTo(0, 0)}
                 >
