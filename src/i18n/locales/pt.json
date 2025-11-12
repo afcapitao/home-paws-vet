@@ -7,7 +7,7 @@
     "area": "Área geográfica",
     "schedule": "Horário",
     "contacts": "Contactos",
-    "blog": "Conselhos e dicas",
+    "blog": "Informações",
     "bookButton": "Quero Agendar"
   },
   "hero": {
@@ -90,5 +90,9 @@
   },
   "about": {
     "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no animal como um todo, no seu bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo o conforto aos animais e comodidade aos seus tutores."
+  },
+  "blog": {
+    "title": "Informações",
+    "subtitle": "Dicas e informações para cuidar melhor do seu animal de estimação"
   }
 }

@@ -2,8 +2,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Home, Syringe, Cat, Dumbbell, Scale, Heart as HeartIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
+  const { t } = useTranslation();
   const articles = [
     {
       icon: Home,
@@ -91,9 +93,9 @@ const Blog = () => {
         {/* Header */}
         <section className="bg-gradient-hero py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Conselhos e dicas</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{t("blog.title")}</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Dicas e informações para cuidar melhor do seu animal de estimação
+              {t("blog.subtitle")}
             </p>
           </div>
         </section>
