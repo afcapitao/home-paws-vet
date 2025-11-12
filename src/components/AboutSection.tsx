@@ -14,17 +14,17 @@ const AboutSection = () => {
           </h2>
           
           <Card className="overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-8 p-8">
-              {/* Photo placeholder */}
-              <div className="flex items-center justify-center">
-                <div className="w-full aspect-square max-w-sm bg-gradient-hero rounded-lg flex items-center justify-center">
-                  <User className="w-32 h-32 text-primary opacity-30" />
+            <div className="flex flex-col md:flex-row gap-8 p-8">
+              {/* Photo placeholder - passport style */}
+              <div className="flex items-start justify-center md:justify-start">
+                <div className="w-48 h-60 bg-gradient-hero rounded-lg flex items-center justify-center shrink-0">
+                  <User className="w-20 h-20 text-primary opacity-30" />
                 </div>
               </div>
               
               {/* Description */}
-              <div className="flex flex-col justify-center space-y-6">
-                <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+              <div className="flex flex-col justify-center space-y-4 flex-1">
+                <p className="text-base text-muted-foreground leading-relaxed text-justify">
                   {t("about.description")}
                 </p>
               </div>
