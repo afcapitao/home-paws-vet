@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { User } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import draSofiaPhoto from "@/assets/dra-sofia-correia.jpg";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -15,11 +15,16 @@ const AboutSection = () => {
           
           <Card className="overflow-hidden">
             <div className="flex flex-col md:flex-row gap-8 p-8">
-              {/* Photo placeholder - passport style */}
-              <div className="flex items-start justify-center md:justify-start">
-                <div className="w-48 h-60 bg-gradient-hero rounded-lg flex items-center justify-center shrink-0">
-                  <User className="w-20 h-20 text-primary opacity-30" />
+              {/* Photo and name */}
+              <div className="flex flex-col items-center md:items-start gap-3">
+                <div className="w-48 h-60 rounded-lg overflow-hidden shrink-0">
+                  <img 
+                    src={draSofiaPhoto} 
+                    alt="Dra. Sofia Correia - Médica Veterinária"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                <p className="text-sm font-medium text-foreground">Dra. Sofia Correia</p>
               </div>
               
               {/* Description */}
