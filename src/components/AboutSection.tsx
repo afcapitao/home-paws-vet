@@ -17,7 +17,7 @@ const AboutSection = () => {
             <div className="flex flex-col md:flex-row gap-8 p-8">
               {/* Photo and name */}
               <div className="flex flex-col items-center md:items-start gap-3">
-                <div className="w-48 h-60 rounded-lg overflow-hidden shrink-0">
+                <div className="w-36 h-48 rounded-lg overflow-hidden shrink-0">
                   <img 
                     src={draSofiaPhoto} 
                     alt="Dra. Sofia Correia - Médica Veterinária"
