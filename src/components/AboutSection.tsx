@@ -24,7 +24,7 @@ const AboutSection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-sm font-medium text-foreground text-center md:text-left">Dra. Sofia Correia</p>
+                <p className="text-sm font-medium text-foreground">Dra. Sofia Correia</p>
               </div>
               
               {/* Description */}
