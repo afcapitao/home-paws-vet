@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             {/* Logo first */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-              <img src={logo} alt="Pet Home Vet" className="h-14 md:h-16 w-auto" />
+              <img src={logo} alt="Pet Home Vet" className="h-20 md:h-24 w-auto" />
             </Link>
 
             {/* Mobile menu button */}
