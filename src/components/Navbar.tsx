@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -107,11 +108,8 @@ const Navbar = () => {
             </DropdownMenu>
 
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <div className="bg-primary rounded-full p-2">
-                <Heart className="h-5 w-5 text-primary-foreground" fill="currentColor" />
-              </div>
-              <span className="font-bold text-lg text-foreground">Pet Home Vet</span>
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img src={logo} alt="Pet Home Vet" className="h-10 w-auto" />
             </Link>
           </div>
 
