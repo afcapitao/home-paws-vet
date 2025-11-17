@@ -37,8 +37,14 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Mobile menu button and Logo */}
+          {/* Logo and Menu */}
           <div className="flex items-center gap-4">
+            {/* Logo first */}
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img src={logo} alt="Pet Home Vet" className="h-36 md:h-40 w-auto" />
+            </Link>
+
+            {/* Mobile menu button */}
             <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
@@ -106,11 +112,6 @@ const Navbar = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-
-            {/* Logo */}
-            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-              <img src={logo} alt="Pet Home Vet" className="h-36 md:h-40 w-auto" />
-            </Link>
           </div>
 
           {/* Language Buttons & CTA */}
