@@ -109,9 +109,7 @@ const Navbar = () => {
 
             {/* Logo */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-              <div className="bg-background border border-border rounded-lg px-6 py-2">
-                <img src={logo} alt="Pet Home Vet" className="h-32 md:h-36 w-auto" />
-              </div>
+              <img src={logo} alt="Pet Home Vet" className="h-36 md:h-40 w-auto" />
             </Link>
           </div>
 
