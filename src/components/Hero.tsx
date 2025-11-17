@@ -8,7 +8,7 @@ const Hero = () => {
   const { t } = useTranslation();
   
   return (
-    <section className="relative bg-gradient-hero overflow-hidden z-[60]">
+    <section className="relative bg-gradient-hero overflow-hidden">
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="space-y-8">
           {/* Title */}
