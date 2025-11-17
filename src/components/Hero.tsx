@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
 
           {/* Features and Rest of Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 mt-4">
             <ul className="space-y-3 text-foreground">
               {t("hero.feature1") && (
                 <li className="flex items-start gap-2">
