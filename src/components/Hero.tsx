@@ -19,12 +19,12 @@ const Hero = () => {
           {/* Description with Image */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-start">
             {/* Description */}
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify order-1 md:col-start-1">
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify order-1 md:col-start-1 md:row-start-1">
               {t("hero.description")}
             </p>
 
             {/* Image */}
-            <div className="relative order-2 md:col-start-2 md:row-span-2">
+            <div className="relative order-2 md:col-start-2 md:row-start-1 lg:row-span-2">
               <div className="relative rounded-2xl overflow-hidden shadow-medium">
                 <img
                   src={heroImage}
@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
 
             {/* Features */}
-            <ul className="space-y-3 text-foreground order-3 md:col-start-1">
+            <ul className="space-y-3 text-foreground order-3 md:col-start-2 md:row-start-2 lg:col-start-1 lg:row-start-2">
               {t("hero.feature1") && (
                 <li className="flex items-start gap-2">
                   <div className="mt-1 text-primary">✓</div>
