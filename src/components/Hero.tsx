@@ -17,43 +17,14 @@ const Hero = () => {
           </h1>
 
           {/* Description with Image */}
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-6 order-2 md:order-1">
-              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                {t("hero.description")}
-              </p>
-
-              {/* Features */}
-              <ul className="space-y-3 text-foreground">
-                {t("hero.feature1") && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span>{t("hero.feature1")}</span>
-                  </li>
-                )}
-                {t("hero.feature2", { defaultValue: "" }) && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span className="text-justify">{t("hero.feature2")}</span>
-                  </li>
-                )}
-                {t("hero.feature3", { defaultValue: "" }) && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span className="text-justify">{t("hero.feature3")}</span>
-                  </li>
-                )}
-                {t("hero.feature4", { defaultValue: "" }) && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span>{t("hero.feature4")}</span>
-                  </li>
-                )}
-              </ul>
-            </div>
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-start">
+            {/* Description */}
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify order-1 md:col-start-1">
+              {t("hero.description")}
+            </p>
 
             {/* Image */}
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-2 md:col-start-2 md:row-span-2">
               <div className="relative rounded-2xl overflow-hidden shadow-medium">
                 <img
                   src={heroImage}
@@ -62,6 +33,34 @@ const Hero = () => {
                 />
               </div>
             </div>
+
+            {/* Features */}
+            <ul className="space-y-3 text-foreground order-3 md:col-start-1">
+              {t("hero.feature1") && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span>{t("hero.feature1")}</span>
+                </li>
+              )}
+              {t("hero.feature2", { defaultValue: "" }) && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span className="text-justify">{t("hero.feature2")}</span>
+                </li>
+              )}
+              {t("hero.feature3", { defaultValue: "" }) && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span className="text-justify">{t("hero.feature3")}</span>
+                </li>
+              )}
+              {t("hero.feature4", { defaultValue: "" }) && (
+                <li className="flex items-start gap-2">
+                  <div className="mt-1 text-primary">✓</div>
+                  <span>{t("hero.feature4")}</span>
+                </li>
+              )}
+            </ul>
           </div>
 
           {/* Rest of Content */}
