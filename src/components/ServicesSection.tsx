@@ -60,6 +60,14 @@ const ServicesSection = () => {
             <ServiceCard key={index} {...service} />
           ))}
         </div>
+        
+        <div className="mt-8 text-muted-foreground">
+          <p className="mb-2">Exames laboratoriais</p>
+          <p className="mb-2">✓</p>
+          <p className="mb-2">Exames de imagem (ecografia e radiografia) efetuados por colega especialista, e em clínica parceira</p>
+          <p className="mb-2">✓</p>
+          <p>Serviço de cirurgia de tecidos moles e higienização oral em clínica parceira</p>
+        </div>
       </div>
     </section>
   );
