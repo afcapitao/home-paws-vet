@@ -18,9 +18,39 @@ const Hero = () => {
 
           {/* Description with Image */}
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-              {t("hero.description")}
-            </p>
+            <div className="space-y-6">
+              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                {t("hero.description")}
+              </p>
+
+              {/* Features */}
+              <ul className="space-y-3 text-foreground">
+                {t("hero.feature1") && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span>{t("hero.feature1")}</span>
+                  </li>
+                )}
+                {t("hero.feature2", { defaultValue: "" }) && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span className="text-justify">{t("hero.feature2")}</span>
+                  </li>
+                )}
+                {t("hero.feature3", { defaultValue: "" }) && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span className="text-justify">{t("hero.feature3")}</span>
+                  </li>
+                )}
+                {t("hero.feature4", { defaultValue: "" }) && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span>{t("hero.feature4")}</span>
+                  </li>
+                )}
+              </ul>
+            </div>
 
             {/* Image */}
             <div className="relative">
@@ -34,34 +64,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Features and Rest of Content */}
+          {/* Rest of Content */}
           <div className="space-y-6">
-            <ul className="space-y-3 text-foreground">
-              {t("hero.feature1") && (
-                <li className="flex items-start gap-2">
-                  <div className="mt-1 text-primary">✓</div>
-                  <span>{t("hero.feature1")}</span>
-                </li>
-              )}
-              {t("hero.feature2", { defaultValue: "" }) && (
-                <li className="flex items-start gap-2">
-                  <div className="mt-1 text-primary">✓</div>
-                  <span className="text-justify">{t("hero.feature2")}</span>
-                </li>
-              )}
-              {t("hero.feature3", { defaultValue: "" }) && (
-                <li className="flex items-start gap-2">
-                  <div className="mt-1 text-primary">✓</div>
-                  <span className="text-justify">{t("hero.feature3")}</span>
-                </li>
-              )}
-              {t("hero.feature4", { defaultValue: "" }) && (
-                <li className="flex items-start gap-2">
-                  <div className="mt-1 text-primary">✓</div>
-                  <span>{t("hero.feature4")}</span>
-                </li>
-              )}
-            </ul>
 
             <div className="flex justify-center">
               <AppointmentForm>
