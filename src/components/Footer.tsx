@@ -1,7 +1,6 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Heart, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -12,7 +11,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <img src={logo} alt="Pet Home Vet" className="h-14 w-auto" />
+            <div className="flex items-center gap-2">
+              <div className="bg-primary rounded-full p-2">
+                <Heart className="h-5 w-5 text-primary-foreground" fill="currentColor" />
+              </div>
+              <span className="font-bold text-lg text-foreground">Pet Home Vet</span>
+            </div>
             <p className="text-muted-foreground text-sm">
               {t("footer.tagline")}
             </p>
