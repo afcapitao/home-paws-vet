@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +7,10 @@ import { useTranslation } from "react-i18next";
 
 const Blog = () => {
   const { t } = useTranslation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const articles = [
     {
       icon: Home,
