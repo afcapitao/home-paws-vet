@@ -72,7 +72,7 @@
     "petName": "Nome",
     "petNamePlaceholder": "Nome do seu animal",
     "birthDate": "Data de Nascimento",
-    "birthDatePlaceholder": "Do seu animal, dd/mm/aaaa, se não souber indique idade aproximada",
+    "birthDatePlaceholder": "Do seu animal, dd/mm/aaaa, ou indique idade aproximada",
     "message": "Motivo da Consulta",
     "messagePlaceholder": "Descreva brevemente o motivo da consulta...",
     "submit": "Enviar Pedido",

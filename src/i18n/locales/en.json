@@ -72,7 +72,7 @@
     "petName": "Name",
     "petNamePlaceholder": "Name of your pet",
     "birthDate": "Birth Date",
-    "birthDatePlaceholder": "Your pet's, dd/mm/yyyy, if unknown indicate approximate age",
+    "birthDatePlaceholder": "Your pet's, dd/mm/yyyy, or indicate approximate age",
     "message": "Reason for Consultation",
     "messagePlaceholder": "Briefly describe the reason for consultation...",
     "submit": "Send Request",
