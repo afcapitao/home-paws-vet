@@ -18,23 +18,9 @@ const Hero = () => {
 
           {/* Description with Image */}
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                {t("hero.description")}
-              </p>
-              
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa para consultas, vacinação e desparasitação, colocação e registo de microchip, emissão de passaporte europeu para viajar.
-              </p>
-
-              <div className="text-sm text-muted-foreground space-y-2">
-                <p>Exames laboratoriais</p>
-                <p>✓</p>
-                <p>Exames de imagem (ecografia e radiografia) efetuados por colega especialista, e em clínica parceira</p>
-                <p>✓</p>
-                <p>Serviço de cirurgia de tecidos moles e higienização oral em clínica parceira</p>
-              </div>
-            </div>
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+              {t("hero.description")}
+            </p>
 
             {/* Image */}
             <div className="relative">
