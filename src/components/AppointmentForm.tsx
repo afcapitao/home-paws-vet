@@ -73,7 +73,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[400px] max-h-[85vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>{t("appointment.title")}</DialogTitle>
           <DialogDescription>
@@ -81,7 +81,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
             <FormField
               control={form.control}
               name="name"
@@ -156,7 +156,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
                     <Textarea
                       placeholder={t("appointment.messagePlaceholder")}
                       className="resize-none"
-                      rows={4}
+                      rows={3}
                       {...field}
                     />
                   </FormControl>
