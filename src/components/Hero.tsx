@@ -18,7 +18,7 @@ const Hero = () => {
 
           {/* Description with Image */}
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-6">
+            <div className="space-y-6 order-2 md:order-1">
               <p className="text-lg text-muted-foreground leading-relaxed text-justify">
                 {t("hero.description")}
               </p>
@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
 
             {/* Image */}
-            <div className="relative">
+            <div className="relative order-1 md:order-2">
               <div className="relative rounded-2xl overflow-hidden shadow-medium">
                 <img
                   src={heroImage}
