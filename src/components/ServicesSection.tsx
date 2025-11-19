@@ -12,14 +12,14 @@ const ServicesSection = () => {
       description: t("services.consultations.description"),
     },
     {
-      icon: Radio,
-      title: t("services.microchip.title"),
-      description: t("services.microchip.description"),
-    },
-    {
       icon: Syringe,
       title: t("services.prophylaxis.title"),
       description: t("services.prophylaxis.description"),
+    },
+    {
+      icon: Radio,
+      title: t("services.microchip.title"),
+      description: t("services.microchip.description"),
     },
     {
       icon: FileText,
@@ -27,14 +27,14 @@ const ServicesSection = () => {
       description: t("services.healthCertificate.description"),
     },
     {
-      icon: ScanLine,
-      title: t("services.imaging.title"),
-      description: t("services.imaging.description"),
-    },
-    {
       icon: Microscope,
       title: t("services.exams.title"),
       description: t("services.exams.description"),
+    },
+    {
+      icon: ScanLine,
+      title: t("services.imaging.title"),
+      description: t("services.imaging.description"),
     },
     {
       icon: Scissors,
