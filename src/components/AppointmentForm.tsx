@@ -34,7 +34,8 @@ const formSchema = z.object({
   name: z.string().trim().min(2, "Nome deve ter pelo menos 2 caracteres").max(100),
   email: z.string().trim().email("Email inválido").max(255),
   phone: z.string().trim().min(9, "Telefone inválido").max(20),
-  petType: z.string().min(1, "Selecione o tipo de animal"),
+  petType: z.string().min(1, "Selecione a espécie"),
+  birthDate: z.string().trim().min(1, "Data de nascimento obrigatória").max(10),
   message: z.string().trim().min(10, "Mensagem deve ter pelo menos 10 caracteres").max(1000),
 });
 
@@ -51,6 +52,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
       email: "",
       phone: "",
       petType: "",
+      birthDate: "",
       message: "",
     },
   });
@@ -62,6 +64,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
 *${t("appointment.email")}:* ${data.email}
 *${t("appointment.phone")}:* ${data.phone}
 *${t("appointment.petType")}:* ${data.petType}
+*${t("appointment.birthDate")}:* ${data.birthDate}
 *${t("appointment.message")}:* ${data.message}`;
 
     const whatsappUrl = `https://wa.me/351911135981?text=${encodeURIComponent(whatsappMessage)}`;
@@ -141,6 +144,20 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
                       <SelectItem value={t("appointment.cat")}>{t("appointment.cat")}</SelectItem>
                     </SelectContent>
                   </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="birthDate"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("appointment.birthDate")}</FormLabel>
+                  <FormControl>
+                    <Input placeholder={t("appointment.birthDatePlaceholder")} {...field} />
+                  </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
