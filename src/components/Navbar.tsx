@@ -116,12 +116,12 @@ const Navbar = () => {
 
           {/* Language Buttons & CTA */}
           <div className="flex items-center gap-2">
-            <div className="hidden sm:flex items-center gap-1 border border-border rounded-md p-1">
+            <div className="flex items-center gap-1 border border-border rounded-md p-1">
               <Button
                 variant={i18n.language === 'pt' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => changeLanguage('pt')}
-                className="h-8 px-3 text-xs"
+                className="h-8 px-2 sm:px-3 text-xs"
               >
                 PT
               </Button>
@@ -129,13 +129,13 @@ const Navbar = () => {
                 variant={i18n.language === 'en' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => changeLanguage('en')}
-                className="h-8 px-3 text-xs"
+                className="h-8 px-2 sm:px-3 text-xs"
               >
                 EN
               </Button>
             </div>
             <AppointmentForm>
-              <Button variant="hero" size="sm" className="hidden sm:flex">
+              <Button variant="hero" size="sm" className="text-xs sm:text-sm">
                 {t("nav.bookButton")}
               </Button>
             </AppointmentForm>
