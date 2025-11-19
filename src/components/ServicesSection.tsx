@@ -61,10 +61,12 @@ const ServicesSection = () => {
           ))}
         </div>
         
-        <div className="mt-8 text-muted-foreground max-w-4xl mx-auto">
-          <p className="text-sm md:text-base leading-relaxed">
-            Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa para consultas, vacinação e desparasitação, colocação e registo de microchip, emissão de passaporte europeu para viajar. Exames laboratoriais ✓ Exames de imagem (ecografia e radiografia) efetuados por colega especialista, e em clínica parceira ✓ Serviço de cirurgia de tecidos moles e higienização oral em clínica parceira
-          </p>
+        <div className="mt-8 text-muted-foreground">
+          <p className="mb-2">Exames laboratoriais</p>
+          <p className="mb-2">✓</p>
+          <p className="mb-2">Exames de imagem (ecografia e radiografia) efetuados por colega especialista, e em clínica parceira</p>
+          <p className="mb-2">✓</p>
+          <p>Serviço de cirurgia de tecidos moles e higienização oral em clínica parceira</p>
         </div>
       </div>
     </section>
