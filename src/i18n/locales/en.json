@@ -5,7 +5,7 @@
     "services": "Services",
     "about": "About",
     "area": "Service Area",
-    "schedule": "Schedule",
+    "schedule": "Opening hours",
     "contacts": "Contacts",
     "blog": "Pet Health Guide",
     "bookButton": "Book Now"
@@ -20,7 +20,9 @@
     "bookButton": "Book Now",
     "bookingInfo": "To book, just contact me via WhatsApp message, send an email or call during office hours",
     "location": "Eastern and Northern Lisbon, Loures and Vila Franca de Xira",
+    "locationLabel": "Service area:",
     "hours": "10am to 6pm Monday to Friday",
+    "hoursLabel": "Opening hours:",
     "noEmergency": "I do not attend emergencies"
   },
   "services": {

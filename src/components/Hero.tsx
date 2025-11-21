@@ -82,7 +82,7 @@ const Hero = () => {
               <div id="area" className="space-y-2 scroll-mt-20">
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                  <h3 className="font-semibold text-foreground">Área geográfica de atuação:</h3>
+                  <h3 className="font-semibold text-foreground">{t("hero.locationLabel")}</h3>
                 </div>
                 <div className="text-sm space-y-1 text-justify">
                   <p><span className="font-medium">Lisboa Oriental e Norte:</span> Ameixoeira e Charneca, Alvalade, Areeiro, Alta de Lisboa, Benfica, Carnide, Lumiar, Marvila, Olivais, Parque das Nações;</p>
@@ -94,7 +94,7 @@ const Hero = () => {
               <div id="horario" className="space-y-2 scroll-mt-20">
                 <div className="flex items-start gap-2">
                   <Clock className="h-4 w-4 text-primary mt-0.5" />
-                  <h3 className="font-semibold text-foreground">Horário de Atendimento:</h3>
+                  <h3 className="font-semibold text-foreground">{t("hero.hoursLabel")}</h3>
                 </div>
                 <div className="text-sm">
                   <p>{t("hero.hours")}</p>
