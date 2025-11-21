@@ -23,7 +23,7 @@
     "locationLabel": "Service area:",
     "hours": "10am to 6pm Monday to Friday",
     "hoursLabel": "Opening hours:",
-    "noEmergency": "I do not attend emergencies"
+    "noEmergency": "I do not provide emergency services"
   },
   "services": {
     "title": "Services",
