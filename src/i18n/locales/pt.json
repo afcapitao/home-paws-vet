@@ -60,7 +60,7 @@
   },
   "appointment": {
     "title": "Agendar Consulta",
-    "description": "Preencha os dados abaixo e entraremos em contacto via WhatsApp.",
+    "description": "Preencha os dados abaixo e entrarei em contacto via WhatsApp.",
     "name": "Nome",
     "namePlaceholder": "Seu nome completo",
     "email": "Email",

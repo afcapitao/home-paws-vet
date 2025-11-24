@@ -60,7 +60,7 @@
   },
   "appointment": {
     "title": "Book Appointment",
-    "description": "Fill in the details below and we will contact you via WhatsApp.",
+    "description": "Fill in the details below and I will contact you via WhatsApp.",
     "name": "Name",
     "namePlaceholder": "Your full name",
     "email": "Email",
