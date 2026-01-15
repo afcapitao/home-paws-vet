@@ -19,9 +19,10 @@ const Hero = () => {
           {/* Description with Image */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-start">
             {/* Description */}
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify order-1 md:col-start-1 md:row-start-1">
-              {t("hero.description")}
-            </p>
+            <p 
+              className="text-lg text-muted-foreground leading-relaxed text-justify order-1 md:col-start-1 md:row-start-1 [&_strong]:text-foreground [&_strong]:font-semibold"
+              dangerouslySetInnerHTML={{ __html: t("hero.description") }}
+            />
 
             {/* Image */}
             <div className="relative order-2 md:col-start-2 md:row-start-1 lg:row-span-2">
