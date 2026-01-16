@@ -46,17 +46,9 @@
       "title": "Health Certificates and Passport",
       "description": "Issuing health certificates and European passport for travel with your pet."
     },
-    "imaging": {
-      "title": "Imaging Exams",
-      "description": "Abdominal ultrasound performed by specialist colleague, radiographs performed at partner clinic."
-    },
-    "exams": {
-      "title": "Laboratory Tests",
-      "description": "Collection and analysis of tests for accurate diagnosis and health monitoring."
-    },
-    "surgery": {
-      "title": "Surgeries",
-      "description": "Soft tissue surgery and oral hygiene at partner clinic."
+    "complementary": {
+      "title": "Complementary Services",
+      "description": "- Laboratory tests\n- Imaging exams\n- Surgeries\n\nSome care requires specific resources. Whenever necessary, we coordinate with specialist colleagues and trusted partner clinics."
     },
     "bookButton": "Book Appointment"
   },

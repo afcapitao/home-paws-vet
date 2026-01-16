@@ -46,17 +46,9 @@
       "title": "Atestados de saúde e Passaporte",
       "description": "Emissão de atestado de saúde e passaporte europeu para viagens com o seu animal de estimação."
     },
-    "imaging": {
-      "title": "Exames de Imagem",
-      "description": "Ecografia abdominal realizada por colega especialista, radiografias realizadas em clínica parceira."
-    },
-    "exams": {
-      "title": "Exames Laboratoriais",
-      "description": "Colheita e análise de exames para diagnóstico preciso e acompanhamento da saúde."
-    },
-    "surgery": {
-      "title": "Cirurgias",
-      "description": "Cirurgias de tecidos moles e higienização oral em clínica parceira."
+    "complementary": {
+      "title": "Serviços Complementares",
+      "description": "- Exames laboratoriais\n- Exames de imagem\n- Cirurgias\n\nAlguns cuidados requerem meios específicos. Sempre que necessário, articulamos com colegas especialistas e clínicas parceiras de confiança."
     },
     "bookButton": "Agendar Consulta"
   },
