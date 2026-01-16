@@ -57,10 +57,9 @@ const Hero = () => {
                   </li>
                 )}
               </ul>
-              <div className="mt-3 text-xs text-muted-foreground italic space-y-1">
-                <p>{t("hero.footnote1")}</p>
-                <p>{t("hero.footnote2")}</p>
-              </div>
+              <p className="mt-3 text-xs text-muted-foreground italic">
+                {t("hero.footnote1")}
+              </p>
             </div>
           </div>
 
