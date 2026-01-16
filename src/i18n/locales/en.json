@@ -32,19 +32,19 @@
     "subtitle": "Veterinary care in the comfort of your home",
     "consultations": {
       "title": "Home Consultations",
-      "description": "General clinic, routine and follow-up consultations in the comfort of your home, reducing your pet's stress."
+      "description": "General clinic, routine and follow-up consultations in the comfort of your home, reducing anxiety to your pet."
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Microchip placement and registration in the national database, ensuring your pet's identification."
+      "description": "Microchip placement and registration in the national database."
     },
     "prophylaxis": {
       "title": "Vaccination and Deworming",
-      "description": "Personalized vaccination plan and regular deworming, essential to maintain your pet's health."
+      "description": "Personalized vaccination plan and regular deworming to maintain your pet's health."
     },
     "healthCertificate": {
       "title": "Health Certificates and Passport",
-      "description": "Issuing health certificates and European passport to travel with your pet."
+      "description": "Issuing health certificates and European passport for travel with your pet."
     },
     "imaging": {
       "title": "Imaging Exams",
