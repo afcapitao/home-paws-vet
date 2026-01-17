@@ -38,7 +38,7 @@
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Colocação e registo de microchip na base de dados nacional, garantindo a identificação do seu patudo."
+      "description": "Colocação e registo de microchip na base de dados nacional, garantindo a identificação."
     },
     "prophylaxis": {
       "title": "Vacinação e Desparasitação",
@@ -95,7 +95,7 @@
     "defaultMessage": "Olá, gostaria de mais informações"
   },
   "about": {
-    "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo conforto aos animais e comodidade aos seus tutores."
+    "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças, e seu tratamento. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo conforto aos animais e comodidade aos seus tutores."
   },
   "blog": {
     "title": "Guia de Saúde Animal",
