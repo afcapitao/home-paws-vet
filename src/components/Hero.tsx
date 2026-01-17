@@ -34,33 +34,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Other Services */}
-            <div className="order-3 md:col-span-2 md:row-start-2 lg:col-span-1 lg:col-start-1 lg:row-start-2">
-              <p className="text-foreground font-medium mb-3">{t("hero.otherServices")}</p>
-              <ul className="space-y-3 text-foreground">
-                {t("hero.feature2", { defaultValue: "" }) && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span className="text-justify">{t("hero.feature2")}</span>
-                  </li>
-                )}
-                {t("hero.feature3", { defaultValue: "" }) && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span className="text-justify">{t("hero.feature3")}</span>
-                  </li>
-                )}
-                {t("hero.feature4", { defaultValue: "" }) && (
-                  <li className="flex items-start gap-2">
-                    <div className="mt-1 text-primary">✓</div>
-                    <span>{t("hero.feature4")}</span>
-                  </li>
-                )}
-              </ul>
-              <p className="mt-3 text-xs text-muted-foreground italic">
-                {t("hero.footnote1")}
-              </p>
-            </div>
           </div>
 
           {/* Rest of Content */}
