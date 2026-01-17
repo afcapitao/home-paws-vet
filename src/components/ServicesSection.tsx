@@ -74,7 +74,7 @@ const ServicesSection = () => {
                   <span>{t("services.otherServices.surgery")}</span>
                 </li>
               </ul>
-              <p className="mt-4 text-sm text-muted-foreground italic">
+              <p className="mt-4 text-xs text-muted-foreground italic">
                 {t("services.otherServices.footnote")}
               </p>
             </CardContent>
