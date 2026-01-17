@@ -57,18 +57,9 @@ const ServicesSection = () => {
               <CardTitle className="text-xl">{t("services.otherServices.title")}</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-muted-foreground text-base leading-relaxed">
-                <li className="flex items-start gap-2">
-                  <span>–</span>
-                  <span>
-                    {t("services.otherServices.labTests")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span>–</span>
-                  <span>{t("services.otherServices.surgery")}</span>
-                </li>
-              </ul>
+              <p className="text-muted-foreground text-base leading-relaxed">
+                {t("services.otherServices.labTests")}
+              </p>
               <p className="mt-4 text-xs text-muted-foreground italic">
                 {t("services.otherServices.footnote")}
               </p>
