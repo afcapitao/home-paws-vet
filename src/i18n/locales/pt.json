@@ -12,7 +12,9 @@
   },
   "hero": {
     "title": "Cuidados Veterinários na Comodidade da Sua Casa",
-    "description": "Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa para consultas, vacinação e desparasitação, colocação e registo de microchip, emissão de passaporte europeu para viajar.",
+    "description": "Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa.",
+    "servicesLabel": "Serviços:",
+    "servicesList": ["Consultas", "Vacinação e desparasitação", "Colocação e registo de microchip", "Emissão de passaporte europeu para viajar"],
     "feature1": "",
     "otherServices": "Outros serviços disponíveis (sob consulta):",
     "feature2": "Exames laboratoriais — colheita, sempre que possível, ao domicílio",
@@ -32,31 +34,27 @@
     "subtitle": "Cuidados veterinários no conforto do seu lar",
     "consultations": {
       "title": "Consultas ao Domicílio",
-      "description": "Consultas de clínica geral, de rotina e acompanhamento na comodidade da sua casa, reduzindo ansiedade ao seu animal."
+      "description": "Consultas de clínica geral, de rotina e acompanhamento no conforto da sua casa, reduzindo o stress do seu animal."
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Colocação e registo de microchip na base de dados nacional."
+      "description": "Colocação e registo de microchip na base de dados nacional, garantindo a identificação do seu patudo."
     },
     "prophylaxis": {
       "title": "Vacinação e Desparasitação",
-      "description": "Plano vacinal personalizado e desparasitação regular para manter a saúde do seu animal."
+      "description": "Plano vacinal personalizado e desparasitação regular, essencial para manter o seu animal saudável."
     },
     "healthCertificate": {
       "title": "Atestados de saúde e Passaporte",
       "description": "Emissão de atestado de saúde e passaporte europeu para viagens com o seu animal de estimação."
     },
-    "imaging": {
-      "title": "Exames de Imagem",
-      "description": "Ecografia abdominal realizada por colega especialista, radiografias realizadas em clínica parceira."
-    },
-    "exams": {
-      "title": "Exames Laboratoriais",
-      "description": "Colheita e análise de exames para diagnóstico preciso e acompanhamento da saúde."
-    },
-    "surgery": {
-      "title": "Cirurgias",
-      "description": "Cirurgias de tecidos moles e higienização oral em clínica parceira."
+    "otherServices": {
+      "title": "Outros serviços",
+      "labTests": "Exames laboratoriais",
+      "labTestsNote": "— colheitas, sempre que possível, ao domicílio",
+      "imaging": "Exames de Imagem",
+      "surgery": "Cirurgias",
+      "footnote": "*Quando indicado, alguns destes serviços são realizados com o apoio de colegas especialistas ou em clínicas parceiras."
     },
     "bookButton": "Agendar Consulta"
   },
@@ -97,7 +95,7 @@
     "defaultMessage": "Olá, gostaria de mais informações"
   },
   "about": {
-    "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no animal como um todo, no seu bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo conforto aos animais e comodidade aos seus tutores."
+    "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo conforto aos animais e comodidade aos seus tutores."
   },
   "blog": {
     "title": "Guia de Saúde Animal",

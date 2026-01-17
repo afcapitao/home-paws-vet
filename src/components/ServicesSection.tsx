@@ -1,5 +1,6 @@
 import ServiceCard from "./ServiceCard";
-import { Stethoscope, Syringe, Radio, FileText, Microscope, ScanLine, Scissors } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Stethoscope, Syringe, Radio, FileText, MoreHorizontal } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ServicesSection = () => {
@@ -26,22 +27,9 @@ const ServicesSection = () => {
       title: t("services.healthCertificate.title"),
       description: t("services.healthCertificate.description"),
     },
-    {
-      icon: Microscope,
-      title: t("services.exams.title"),
-      description: t("services.exams.description"),
-    },
-    {
-      icon: ScanLine,
-      title: t("services.imaging.title"),
-      description: t("services.imaging.description"),
-    },
-    {
-      icon: Scissors,
-      title: t("services.surgery.title"),
-      description: t("services.surgery.description"),
-    },
   ];
+
+  
 
   return (
     <section id="servicos" className="py-16 bg-background scroll-mt-16">
@@ -59,6 +47,38 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
+          
+          {/* Other Services Card */}
+          <Card className="hover:shadow-medium transition-all hover:-translate-y-1 border-border">
+            <CardHeader>
+              <div className="mb-4 inline-flex p-3 bg-gradient-hero rounded-lg">
+                <MoreHorizontal className="h-6 w-6 text-primary" />
+              </div>
+              <CardTitle className="text-xl">{t("services.otherServices.title")}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-muted-foreground text-base leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span>–</span>
+                  <span>
+                    {t("services.otherServices.labTests")}
+                    <span className="text-sm"> {t("services.otherServices.labTestsNote")}</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span>–</span>
+                  <span>{t("services.otherServices.imaging")}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span>–</span>
+                  <span>{t("services.otherServices.surgery")}</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-xs text-muted-foreground italic">
+                {t("services.otherServices.footnote")}
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

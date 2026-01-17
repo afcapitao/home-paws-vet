@@ -12,7 +12,9 @@
   },
   "hero": {
     "title": "Veterinary Care in the Comfort of Your Home",
-    "description": "Home veterinary care for dogs and cats, providing consultations, vaccination and deworming, microchip placement and registration, and European pet passport issuance — all in the comfort and safety of your home, where your pet feels most relaxed.",
+    "description": "Home veterinary care for dogs and cats in the comfort and safety of your home.",
+    "servicesLabel": "Services:",
+    "servicesList": ["Consultations", "Vaccination and deworming", "Microchip placement and registration", "European pet passport issuance"],
     "feature1": "",
     "otherServices": "Other available services (upon request):",
     "feature2": "Laboratory tests — sample collection at home whenever possible",
@@ -32,31 +34,27 @@
     "subtitle": "Veterinary care in the comfort of your home",
     "consultations": {
       "title": "Home Consultations",
-      "description": "General clinic, routine and follow-up consultations in the comfort of your home, reducing anxiety to your pet."
+      "description": "General clinic, routine and follow-up consultations in the comfort of your home, reducing your pet's stress."
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Microchip placement and registration in the national database."
+      "description": "Microchip placement and registration in the national database, ensuring your pet's identification."
     },
     "prophylaxis": {
       "title": "Vaccination and Deworming",
-      "description": "Personalized vaccination plan and regular deworming to maintain your pet's health."
+      "description": "Personalized vaccination plan and regular deworming, essential to keep your pet healthy."
     },
     "healthCertificate": {
       "title": "Health Certificates and Passport",
       "description": "Issuing health certificates and European passport for travel with your pet."
     },
-    "imaging": {
-      "title": "Imaging Exams",
-      "description": "Abdominal ultrasound performed by specialist colleague, radiographs performed at partner clinic."
-    },
-    "exams": {
-      "title": "Laboratory Tests",
-      "description": "Collection and analysis of tests for accurate diagnosis and health monitoring."
-    },
-    "surgery": {
-      "title": "Surgeries",
-      "description": "Soft tissue surgery and oral hygiene at partner clinic."
+    "otherServices": {
+      "title": "Other services",
+      "labTests": "Laboratory tests",
+      "labTestsNote": "— sample collection at home whenever possible",
+      "imaging": "Imaging exams",
+      "surgery": "Surgeries",
+      "footnote": "*When indicated, some of these services are performed with the support of specialist colleagues or at partner clinics."
     },
     "bookButton": "Book Appointment"
   },
@@ -97,7 +95,7 @@
     "defaultMessage": "Hello, I would like more information"
   },
   "about": {
-    "description": "I am a veterinarian, graduated from FMV-UTL, with over 10 years of experience in small companion animal clinics, with special interest in proximity care, focusing on animal welfare, disease prevention and diagnosis, and I seek to provide these services at home, in order to bring comfort not only to animals but also practicality and convenience to their owners."
+    "description": "I am a veterinarian, graduated from FMV-UTL, with over 10 years of experience in small companion animal clinics. I have a special interest in proximity care, focusing on welfare and quality of life, disease prevention and early diagnosis. My mission is to provide home veterinary care, bringing comfort to animals and convenience to their owners."
   },
   "blog": {
     "title": "Pet Health Guide",
