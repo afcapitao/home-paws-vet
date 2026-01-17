@@ -17,10 +17,7 @@ const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="flex items-start gap-2 text-muted-foreground text-base leading-relaxed">
-          <span>–</span>
-          <span>{description}</span>
-        </div>
+        <CardDescription className="text-base leading-relaxed text-justify">{description}</CardDescription>
       </CardContent>
     </Card>
   );
