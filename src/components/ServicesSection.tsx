@@ -57,7 +57,7 @@ const ServicesSection = () => {
               <CardTitle className="text-xl">{t("services.otherServices.title")}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-base leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed text-justify">
                 {t("services.otherServices.labTests")}
               </p>
               <p className="mt-4 text-xs text-muted-foreground italic">

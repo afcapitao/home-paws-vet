@@ -17,7 +17,7 @@ const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-muted-foreground text-base leading-relaxed">
+        <CardDescription className="text-muted-foreground text-base leading-relaxed text-justify">
           {description}
         </CardDescription>
       </CardContent>
