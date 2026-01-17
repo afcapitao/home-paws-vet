@@ -28,7 +28,7 @@ const Hero = () => {
                 <ul className="space-y-1 text-muted-foreground">
                   {(t("hero.servicesList", { returnObjects: true }) as string[]).map((service, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="text-primary">✓</span>
+                      <span className="text-green-600">✓</span>
                       <span>{service}</span>
                     </li>
                   ))}
