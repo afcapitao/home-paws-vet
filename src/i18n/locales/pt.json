@@ -13,7 +13,7 @@
   "hero": {
     "title": "Cuidados Veterinários na Comodidade da Sua Casa",
     "description": "Atendimento médico-veterinário ao domicílio de cães e gatos na comodidade e segurança da sua casa.",
-    "servicesLabel": "Serviços:",
+    "servicesLabel": "",
     "servicesList": ["Consultas", "Vacinação e desparasitação", "Colocação e registo de microchip", "Emissão de passaporte europeu para viajar"],
     "feature1": "",
     "otherServices": "Outros serviços disponíveis (sob consulta):",
