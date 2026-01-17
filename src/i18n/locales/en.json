@@ -12,7 +12,9 @@
   },
   "hero": {
     "title": "Veterinary Care in the Comfort of Your Home",
-    "description": "Home veterinary care for dogs and cats, providing consultations, vaccination and deworming, microchip placement and registration, and European pet passport issuance — all in the comfort and safety of your home, where your pet feels most relaxed.",
+    "description": "Home veterinary care for dogs and cats in the comfort and safety of your home.",
+    "servicesLabel": "Services:",
+    "servicesList": ["Consultations", "Vaccination and deworming", "Microchip placement and registration", "European pet passport issuance"],
     "feature1": "",
     "otherServices": "Other available services (upon request):",
     "feature2": "Laboratory tests — sample collection at home whenever possible",
