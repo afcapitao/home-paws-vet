@@ -49,10 +49,10 @@
       "description": "Emissão de atestado de saúde e passaporte europeu, permitindo viajar com segurança e tranquilidade."
     },
     "otherServices": {
-      "title": "Outros serviços",
-      "labTests": "Exames laboratoriais",
+      "title": "Outros serviços (sob consulta):",
+      "labTests": "Exames complementares (laboratoriais, imagiologia)",
       "labTestsNote": "",
-      "imaging": "Exames de Imagem",
+      "imaging": "",
       "surgery": "Cirurgias",
       "footnote": "*Quando indicado, alguns destes serviços são realizados com o apoio de colegas especialistas ou em clínicas parceiras."
     },
