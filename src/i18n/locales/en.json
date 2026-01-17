@@ -13,7 +13,7 @@
   "hero": {
     "title": "Veterinary Care in the Comfort of Your Home",
     "description": "Home veterinary care for dogs and cats in the comfort and safety of your home.",
-    "servicesLabel": "Services:",
+    "servicesLabel": "",
     "servicesList": ["Consultations", "Vaccination and deworming", "Microchip placement and registration", "European pet passport issuance"],
     "feature1": "",
     "otherServices": "Other available services (upon request):",
