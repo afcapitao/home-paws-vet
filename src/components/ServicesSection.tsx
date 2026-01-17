@@ -62,12 +62,7 @@ const ServicesSection = () => {
                   <span>–</span>
                   <span>
                     {t("services.otherServices.labTests")}
-                    <span className="text-sm"> {t("services.otherServices.labTestsNote")}</span>
                   </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span>–</span>
-                  <span>{t("services.otherServices.imaging")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span>–</span>
