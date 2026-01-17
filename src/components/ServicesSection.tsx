@@ -60,7 +60,7 @@ const ServicesSection = () => {
               <p className="text-muted-foreground text-base leading-relaxed text-justify">
                 {t("services.otherServices.labTests")}
               </p>
-              <p className="mt-4 text-xs text-muted-foreground italic">
+              <p className="mt-4 text-xs text-muted-foreground italic text-justify">
                 {t("services.otherServices.footnote")}
               </p>
             </CardContent>
