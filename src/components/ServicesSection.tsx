@@ -29,7 +29,7 @@ const ServicesSection = () => {
     },
   ];
 
-  const otherServicesList = t("services.otherServices.list", { returnObjects: true }) as string[];
+  
 
   return (
     <section id="servicos" className="py-16 bg-background scroll-mt-16">
@@ -58,12 +58,21 @@ const ServicesSection = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-muted-foreground text-base leading-relaxed">
-                {otherServicesList.map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-primary">–</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
+                <li className="flex items-start gap-2">
+                  <span>–</span>
+                  <span>
+                    {t("services.otherServices.labTests")}
+                    <span className="text-sm"> {t("services.otherServices.labTestsNote")}</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span>–</span>
+                  <span>{t("services.otherServices.imaging")}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span>–</span>
+                  <span>{t("services.otherServices.surgery")}</span>
+                </li>
               </ul>
               <p className="mt-4 text-sm text-muted-foreground italic">
                 {t("services.otherServices.footnote")}

@@ -50,7 +50,10 @@
     },
     "otherServices": {
       "title": "Other services",
-      "list": ["Laboratory tests — sample collection at home whenever possible", "Imaging exams", "Surgeries"],
+      "labTests": "Laboratory tests",
+      "labTestsNote": "— sample collection at home whenever possible",
+      "imaging": "Imaging exams",
+      "surgery": "Surgeries",
       "footnote": "*When indicated, some of these services are performed with the support of specialist colleagues or at partner clinics."
     },
     "bookButton": "Book Appointment"

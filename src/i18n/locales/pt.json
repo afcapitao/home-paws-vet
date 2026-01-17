@@ -50,7 +50,10 @@
     },
     "otherServices": {
       "title": "Outros serviços",
-      "list": ["Exames laboratoriais — colheitas, sempre que possível, ao domicílio", "Exames de Imagem", "Cirurgias"],
+      "labTests": "Exames laboratoriais",
+      "labTestsNote": "— colheitas, sempre que possível, ao domicílio",
+      "imaging": "Exames de Imagem",
+      "surgery": "Cirurgias",
       "footnote": "*Quando indicado, alguns destes serviços são realizados com o apoio de colegas especialistas ou em clínicas parceiras."
     },
     "bookButton": "Agendar Consulta"
