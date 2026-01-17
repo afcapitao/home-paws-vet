@@ -18,23 +18,10 @@ const Hero = () => {
 
           {/* Description with Image */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-start">
-            {/* Description and Services */}
-            <div className="order-1 md:col-start-1 md:row-start-1 space-y-4">
-              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                {t("hero.description")}
-              </p>
-              <div>
-                <p className="text-foreground font-medium mb-2">{t("hero.servicesLabel")}</p>
-                <ul className="space-y-1 text-muted-foreground">
-                  {(t("hero.servicesList", { returnObjects: true }) as string[]).map((service, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-green-600">✓</span>
-                      <span>{service}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            {/* Description */}
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify order-1 md:col-start-1 md:row-start-1">
+              {t("hero.description")}
+            </p>
 
             {/* Image */}
             <div className="relative order-2 md:col-start-2 md:row-start-1 lg:row-span-2">
@@ -47,6 +34,33 @@ const Hero = () => {
               </div>
             </div>
 
+            {/* Other Services */}
+            <div className="order-3 md:col-span-2 md:row-start-2 lg:col-span-1 lg:col-start-1 lg:row-start-2">
+              <p className="text-foreground font-medium mb-3">{t("hero.otherServices")}</p>
+              <ul className="space-y-3 text-foreground">
+                {t("hero.feature2", { defaultValue: "" }) && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span className="text-justify">{t("hero.feature2")}</span>
+                  </li>
+                )}
+                {t("hero.feature3", { defaultValue: "" }) && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span className="text-justify">{t("hero.feature3")}</span>
+                  </li>
+                )}
+                {t("hero.feature4", { defaultValue: "" }) && (
+                  <li className="flex items-start gap-2">
+                    <div className="mt-1 text-primary">✓</div>
+                    <span>{t("hero.feature4")}</span>
+                  </li>
+                )}
+              </ul>
+              <p className="mt-3 text-xs text-muted-foreground italic">
+                {t("hero.footnote1")}
+              </p>
+            </div>
           </div>
 
           {/* Rest of Content */}
