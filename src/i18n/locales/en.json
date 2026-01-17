@@ -22,7 +22,7 @@
     "feature4": "Soft tissue surgery and oral hygiene",
     "footnote1": "*When indicated, some of these services are performed with the support of specialist colleagues or at partner clinics.",
     "bookButton": "Book Now",
-    "bookingInfo": "To book, just contact me via WhatsApp message, send an email (answers in 24h) or call during office hours",
+    "bookingInfo": "Alternatively, contact via WhatsApp, email (responses within 24h) or phone during office hours",
     "location": "Eastern and Northern Lisbon, Loures and Vila Franca de Xira",
     "locationLabel": "Service area:",
     "hours": "Monday to Friday from 10am to 6pm",
@@ -38,7 +38,7 @@
     },
     "microchip": {
       "title": "Microchip",
-      "description": "Microchip placement and registration in the national database, ensuring your pet's identification."
+      "description": "Microchip placement and registration in the national database."
     },
     "prophylaxis": {
       "title": "Vaccination and Deworming",
@@ -49,11 +49,11 @@
       "description": "Issuing health certificates and European passport for travel with your pet."
     },
     "otherServices": {
-      "title": "Other services",
-      "labTests": "Laboratory tests",
-      "labTestsNote": "— sample collection at home whenever possible",
-      "imaging": "Imaging exams",
-      "surgery": "Surgeries",
+      "title": "Other services (upon request):",
+      "labTests": "Complementary exams (laboratory, imaging), Surgeries, Euthanasia",
+      "labTestsNote": "",
+      "imaging": "",
+      "surgery": "",
       "footnote": "*When indicated, some of these services are performed with the support of specialist colleagues or at partner clinics."
     },
     "bookButton": "Book Appointment"
@@ -95,7 +95,7 @@
     "defaultMessage": "Hello, I would like more information"
   },
   "about": {
-    "description": "I am a veterinarian, graduated from FMV-UTL, with over 10 years of experience in small companion animal clinics. I have a special interest in proximity care, focusing on welfare and quality of life, disease prevention and early diagnosis. My mission is to provide home veterinary care, bringing comfort to animals and convenience to their owners."
+    "description": "I am a veterinarian, graduated from FMV-UTL, with over 10 years of experience in small companion animal clinics. I have a special interest in proximity care, focusing on welfare and quality of life, disease prevention, early diagnosis, and treatment. My mission is to provide home veterinary care, bringing comfort to animals and convenience to their owners."
   },
   "blog": {
     "title": "Pet Health Guide",
