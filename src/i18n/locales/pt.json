@@ -78,6 +78,9 @@
     "message": "Motivo da Consulta",
     "messagePlaceholder": "Descreva brevemente o motivo da consulta...",
     "submit": "Enviar Pedido",
+    "sending": "A enviar...",
+    "success": "Pedido enviado com sucesso! Entrarei em contacto em breve.",
+    "error": "Erro ao enviar o pedido. Por favor, tente novamente.",
     "whatsappMessage": "Olá, gostaria de agendar uma consulta"
   },
   "footer": {

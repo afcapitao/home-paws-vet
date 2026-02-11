@@ -59,21 +59,38 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
     },
   });
 
-  const onSubmit = (data: FormData) => {
-    const whatsappMessage = `${t("appointment.whatsappMessage")}
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-*${t("appointment.name")}:* ${data.name}
-*${t("appointment.email")}:* ${data.email}
-*${t("appointment.phone")}:* ${data.phone}
-*${t("appointment.petType")}:* ${data.petType}
-*${t("appointment.petName")}:* ${data.petName}
-*${t("appointment.birthDate")}:* ${data.birthDate}
-*${t("appointment.message")}:* ${data.message}`;
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://formspree.io/f/mreaevva", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          [t("appointment.name")]: data.name,
+          [t("appointment.email")]: data.email,
+          [t("appointment.phone")]: data.phone,
+          [t("appointment.petType")]: data.petType,
+          [t("appointment.petName")]: data.petName,
+          [t("appointment.birthDate")]: data.birthDate,
+          [t("appointment.message")]: data.message,
+          _subject: `Novo pedido de consulta - ${data.petName} (${data.name})`,
+        }),
+      });
 
-    const whatsappUrl = `https://wa.me/351911135981?text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(whatsappUrl, "_blank");
-    setOpen(false);
-    form.reset();
+      if (response.ok) {
+        setOpen(false);
+        form.reset();
+        alert(t("appointment.success"));
+      } else {
+        alert(t("appointment.error"));
+      }
+    } catch {
+      alert(t("appointment.error"));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -199,8 +216,8 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
               )}
             />
 
-            <Button type="submit" className="w-full" variant="hero">
-              {t("appointment.submit")}
+            <Button type="submit" className="w-full" variant="hero" disabled={isSubmitting}>
+              {isSubmitting ? t("appointment.sending") : t("appointment.submit")}
             </Button>
           </form>
         </Form>
