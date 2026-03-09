@@ -70,8 +70,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="mailto:contato@pethomevet.pt" className="hover:text-primary transition-colors">
-                  contato@pethomevet.pt
+                <a href="mailto:consultas@pethomevet.pt" className="hover:text-primary transition-colors">
+                  consultas@pethomevet.pt
                 </a>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
