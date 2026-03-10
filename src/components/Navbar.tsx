@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: t("nav.area"), path: "/#area" },
     { name: t("nav.schedule"), path: "/#horario" },
     { name: t("nav.contacts"), path: "/#contactos" },
-    { name: t("nav.blog"), path: "/blog" },
+    
   ];
 
   const changeLanguage = (lang: string) => {
