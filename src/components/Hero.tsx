@@ -41,7 +41,7 @@ const Hero = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-medium">
                 <img
                   src={heroImage}
-                  alt="Veterinária atendendo cachorro em casa"
+                  alt="Veterinária ao domicílio a atender cão em casa em Lisboa"
                   className="w-full h-auto object-cover"
                 />
               </div>

@@ -20,8 +20,9 @@ const AboutSection = () => {
                 <div className="w-48 h-60 rounded-lg overflow-hidden shrink-0">
                   <img 
                     src={draSofiaPhoto} 
-                    alt="Dra. Sofia Correia - Médica Veterinária"
+                    alt="Dra. Sofia Correia - Médica Veterinária ao domicílio em Lisboa"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <p className="text-sm font-medium text-foreground">Dra. Sofia Correia</p>
