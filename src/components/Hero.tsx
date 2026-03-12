@@ -84,8 +84,6 @@ const Hero = () => {
                   <p>{t("hero.hours")}</p>
                 </div>
               </div>
-              
-              <p className="text-muted-foreground italic">{t("hero.noEmergency")}</p>
             </div>
           </div>
         </div>
