@@ -26,7 +26,8 @@
     "location": "Lisboa Oriental e Norte, Loures e Vila Franca de Xira",
     "locationLabel": "Área geográfica de atuação:",
     "hours": "2ªf a 6ªf das 10h às 18h",
-    "hoursLabel": "Horário de Atendimento:"
+    "hoursLabel": "Horário de Atendimento:",
+    "noEmergency": "Serviço veterinário apenas por marcação."
   },
   "services": {
     "title": "Serviços",
