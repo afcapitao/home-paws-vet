@@ -26,8 +26,7 @@
     "location": "Lisboa Oriental e Norte, Loures e Vila Franca de Xira",
     "locationLabel": "Área geográfica de atuação:",
     "hours": "2ªf a 6ªf das 10h às 18h",
-    "hoursLabel": "Horário de Atendimento:",
-    "noEmergency": "Serviço veterinário apenas por marcação."
+    "hoursLabel": "Horário de Atendimento:"
   },
   "services": {
     "title": "Serviços",
@@ -95,7 +94,7 @@
   },
   "whatsapp": {
     "contact": "Contactar via WhatsApp",
-    "defaultMessage": "Olá, gostaria de mais informações"
+    "defaultMessage": "Olá, gostaria de agendar uma consulta"
   },
   "about": {
     "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças, e seu tratamento. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo conforto aos animais e comodidade aos seus tutores."

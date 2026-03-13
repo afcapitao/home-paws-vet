@@ -26,8 +26,7 @@
     "location": "Eastern and Northern Lisbon, Loures and Vila Franca de Xira",
     "locationLabel": "Service area:",
     "hours": "Monday to Friday from 10am to 6pm",
-    "hoursLabel": "Opening hours:",
-    "noEmergency": "Home veterinary visits by appointment only."
+    "hoursLabel": "Opening hours:"
   },
   "services": {
     "title": "Services",
@@ -95,7 +94,7 @@
   },
   "whatsapp": {
     "contact": "Contact via WhatsApp",
-    "defaultMessage": "Hello, I would like more information"
+    "defaultMessage": "Hello, I would like to schedule an appointment"
   },
   "about": {
     "description": "I am a veterinarian, graduated from FMV-UTL, with over 10 years of experience in small companion animal clinics. I have a special interest in proximity care, focusing on welfare and quality of life, disease prevention, early diagnosis, and treatment. My mission is to provide home veterinary care, bringing comfort to animals and convenience to their owners."

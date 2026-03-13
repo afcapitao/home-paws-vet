@@ -85,7 +85,6 @@ const Hero = () => {
                 </div>
               </div>
               
-              <p className="text-muted-foreground italic">{t("hero.noEmergency")}</p>
             </div>
           </div>
         </div>
