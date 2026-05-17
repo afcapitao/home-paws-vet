@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
-import draSofiaPhoto from "@/assets/dra-sofia-correia.jpg";
+import draSofiaPhoto from "@/assets/dra-sofia-correia.webp";
 
 const AboutSection = () => {
   const { t } = useTranslation();
