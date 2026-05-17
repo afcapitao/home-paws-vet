@@ -70,6 +70,7 @@ const Navbar = () => {
                     ) : (
                       <Link
                         to={item.path}
+                        onClick={() => item.path === "/" && window.scrollTo({ top: 0, behavior: "smooth" })}
                         className={`cursor-pointer ${
                           isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
                         }`}
@@ -105,6 +106,7 @@ const Navbar = () => {
                     ) : (
                       <Link
                         to={item.path}
+                        onClick={() => item.path === "/" && window.scrollTo({ top: 0, behavior: "smooth" })}
                         className={`cursor-pointer ${
                           isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
                         }`}
