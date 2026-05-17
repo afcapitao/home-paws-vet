@@ -132,7 +132,7 @@
             {
               "heading": "2. Redução do risco de doenças contagiosas",
               "content": [
-                { "type": "paragraph", "text": "Nas clínicas veterinárias, especialmente em épocas de vacinação, existe maior circulação de animais doentes ou em fase de diagnóstico." },
+                { "type": "paragraph", "text": "Nas clínicas veterinárias, o ambiente partilhado aumenta a possibilidade de contacto entre animais ainda não vacinados e animais doentes ou em fase de diagnóstico." },
                 { "type": "paragraph", "text": "Ao optar pelo domicílio:" },
                 { "type": "list", "items": ["Evita-se contacto com animais potencialmente infetados", "Reduz-se o risco de transmissão de doenças, especialmente em cachorros e gatinhos em fase de primo-vacinação"] }
               ]
@@ -176,7 +176,7 @@
           "heading": "Quando escolher veterinário ao domicílio?",
           "content": [
             { "type": "paragraph", "text": "Este serviço é especialmente indicado para:" },
-            { "type": "list", "items": ["Gatos muito stressados com deslocações", "Cães ansiosos ou agressivos em ambiente clínico", "Animais idosos ou com doenças crónicas", "Vacinações e consultas de rotina", "Situações de fim de vida", "Tutores com falta de disponibilidade para deslocações"] }
+            { "type": "list", "items": ["Gatos muito stressados com deslocações", "Cães ansiosos em ambiente clínico", "Animais idosos ou com doenças crónicas", "Vacinações e consultas de rotina", "Situações de fim de vida", "Tutores com falta de disponibilidade para deslocações"] }
           ]
         },
         {

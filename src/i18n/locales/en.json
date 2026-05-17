@@ -132,7 +132,7 @@
             {
               "heading": "2. Reduced risk of contagious diseases",
               "content": [
-                { "type": "paragraph", "text": "At veterinary clinics, especially during vaccination seasons, there is greater circulation of sick or undiagnosed animals." },
+                { "type": "paragraph", "text": "In veterinary clinics, the shared environment increases the possibility of contact between unvaccinated animals and those that are sick or awaiting diagnosis." },
                 { "type": "paragraph", "text": "By opting for home visits:" },
                 { "type": "list", "items": ["Contact with potentially infected animals is avoided", "The risk of disease transmission is reduced, especially for puppies and kittens during their initial vaccination period"] }
               ]
@@ -176,7 +176,7 @@
           "heading": "When to choose a home vet?",
           "content": [
             { "type": "paragraph", "text": "This service is especially recommended for:" },
-            { "type": "list", "items": ["Cats that are very stressed by travel", "Anxious or aggressive dogs in clinical settings", "Elderly or chronically ill animals", "Vaccinations and routine check-ups", "End-of-life situations", "Owners with limited availability for travel"] }
+            { "type": "list", "items": ["Cats that are very stressed by travel", "Anxious dogs in clinical settings", "Elderly or chronically ill animals", "Vaccinations and routine check-ups", "End-of-life situations", "Owners with limited availability for travel"] }
           ]
         },
         {
