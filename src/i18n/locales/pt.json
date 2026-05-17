@@ -66,6 +66,8 @@
     "emailPlaceholder": "seu@email.com",
     "phone": "Telefone",
     "phonePlaceholder": "912 345 678",
+    "postalCode": "Código Postal",
+    "postalCodePlaceholder": "1234-567",
     "petType": "Espécie",
     "petTypePlaceholder": "Selecione a espécie do seu animal",
     "dog": "Cão",

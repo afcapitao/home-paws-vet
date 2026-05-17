@@ -34,6 +34,7 @@ const formSchema = z.object({
   name: z.string().trim().min(2, "Nome deve ter pelo menos 2 caracteres").max(100),
   email: z.string().trim().email("Email inválido").max(255),
   phone: z.string().trim().min(9, "Telefone inválido").max(20),
+  postalCode: z.string().trim().regex(/^\d{4}-\d{3}$/, "Código postal inválido (ex: 1234-567)"),
   petType: z.string().min(1, "Selecione a espécie"),
   petName: z.string().trim().min(2, "Nome do animal deve ter pelo menos 2 caracteres").max(50),
   birthDate: z.string().trim().min(1, "Data de nascimento obrigatória").max(10),
@@ -52,6 +53,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
       name: "",
       email: "",
       phone: "",
+      postalCode: "",
       petType: "",
       petName: "",
       birthDate: "",
@@ -68,13 +70,14 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          [t("appointment.name")]: data.name,
-          [t("appointment.email")]: data.email,
-          [t("appointment.phone")]: data.phone,
-          [t("appointment.petType")]: data.petType,
-          [t("appointment.petName")]: data.petName,
-          [t("appointment.birthDate")]: data.birthDate,
-          [t("appointment.message")]: data.message,
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          postal_code: data.postalCode,
+          pet_type: data.petType,
+          pet_name: data.petName,
+          birth_date: data.birthDate,
+          message: data.message,
           _subject: `Novo pedido de consulta - ${data.petName} (${data.name})`,
         }),
       });
@@ -141,6 +144,20 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
                   <FormLabel>{t("appointment.phone")}</FormLabel>
                   <FormControl>
                     <Input placeholder={t("appointment.phonePlaceholder")} {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="postalCode"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("appointment.postalCode")}</FormLabel>
+                  <FormControl>
+                    <Input placeholder={t("appointment.postalCodePlaceholder")} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
