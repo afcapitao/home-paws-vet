@@ -31,7 +31,11 @@ const Navbar = () => {
     i18n.changeLanguage(lang);
   };
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path === "/") return location.pathname === "/" && !location.hash;
+    if (path.startsWith("/#")) return location.pathname === "/" && location.hash === path.slice(1);
+    return location.pathname === path;
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-background border-b border-border">

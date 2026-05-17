@@ -7,7 +7,7 @@
     "area": "Área geográfica",
     "schedule": "Horário",
     "contacts": "Contactos",
-    "blog": "Guia de Saúde Animal",
+    "blog": "Veterinário ao Domicílio",
     "bookButton": "Quero Agendar"
   },
   "hero": {
@@ -100,79 +100,109 @@
     "description": "Sou médica veterinária, formada pela FMV-UTL, com mais de 10 anos de experiência em clínica de pequenos animais de companhia. Tenho especial interesse na medicina de proximidade, centrando-me no bem-estar e qualidade de vida, na prevenção e diagnóstico precoce de doenças, e seu tratamento. A minha missão é proporcionar esses cuidados veterinários ao domicílio, promovendo conforto aos animais e comodidade aos seus tutores."
   },
   "blog": {
-    "title": "Guia de Saúde Animal",
-    "subtitle": "Orientações e informações para cuidar melhor do seu animal de estimação",
-    "posts": [
-      {
-        "title": "Vantagens de Consultas ao Domicílio",
-        "subtitle": "Descubra os benefícios de cuidar do seu animal no conforto de casa",
-        "items": [
-          "Menos riscos de contrair doenças infecto-contagiosas, especialmente na altura da primo-vacinação",
-          "O animal não enjoa nem stressa com a deslocação ao sair do seu ambiente",
-          "O tutor não perde tempo em deslocações nem em filas de atendimento - praticidade e comodidade",
-          "A consulta é mais personalizada e individualizada, permitindo dedicar mais atenção a cada animal",
-          "Atendimento a animais idosos, com mobilidade reduzida ou com medo de sair de casa",
-          "Eutanásias humanizadas em casos terminais",
-          "O veterinário pode avaliar de forma mais completa o comportamento e o ambiente do animal"
-        ]
-      },
-      {
-        "title": "Vantagens de Vacinar",
-        "subtitle": "A importância da vacinação para a saúde do seu animal",
-        "items": [
-          "Protege o animal de várias doenças, as quais podem ser fatais",
-          "Segurança para o animal e para a comunidade: além de proteger o seu animal, contribui para a segurança dele e de outros animais, e protege a saúde pública",
-          "A vacinação de rotina contribui para a sua longevidade e qualidade de vida",
-          "Prevenção é sempre melhor e mais económica do que tratar doenças graves"
-        ]
-      },
-      {
-        "title": "Como Ajudar o Gato a Perder o Medo do Veterinário",
-        "subtitle": "Dicas para tornar as visitas veterinárias menos stressantes para felinos",
-        "items": [
-          "Use transportadoras confortáveis e familiarize o gato com ela antes da consulta",
-          "Mantenha a calma - os gatos sentem a ansiedade dos tutores",
-          "Considere consultas ao domicílio para eliminar o stress da viagem",
-          "Recompense o bom comportamento com petiscos e carinhos",
-          "Evite jejum prolongado antes da consulta, a menos que seja necessário"
-        ]
-      },
-      {
-        "title": "Exercícios com o Seu Melhor Amigo",
-        "subtitle": "Dicas para manter o seu cão ativo e saudável",
-        "items": [
-          "Caminhadas adaptadas são o exercício universal para todos os cães",
-          "Estímulos mentais também cansam e educam - use brinquedos interativos",
-          "Corrida é para cães atléticos e bem condicionados - sempre gradual",
-          "Brincadeiras de puxar fortalecem confiança e musculatura (ensine os comandos 'solta' e 'espera')",
-          "Sessões curtas de treino cansam (deitar, sentar, dar a pata durante 5-10 minutos com reforço positivo)",
-          "A maior prova de amor é respeitar os limites do seu cão - observe sinais de cansaço"
-        ]
-      },
-      {
-        "title": "Obesidade em Animais de Estimação",
-        "subtitle": "Como prevenir e combater o excesso de peso nos pets",
-        "items": [
-          "Avaliação regular da condição corporal com um veterinário é essencial",
-          "Controle o acesso à comida - evite alimentação à vontade",
-          "Promova atividades físicas frequentes e adaptadas ao animal",
-          "Tecnologias como coleiras inteligentes podem auxiliar no monitoramento",
-          "Escolha petiscos saudáveis, como frutas e vegetais apropriados",
-          "A obesidade pode levar a diabetes, problemas articulares e redução da expectativa de vida"
-        ]
-      },
-      {
-        "title": "Como Lidar com o Luto Após Perda de um Animal",
-        "subtitle": "Apoio emocional para tutores que perderam seus companheiros",
-        "items": [
-          "O luto pela perda de um animal de estimação é real e deve ser respeitado",
-          "Permita-se sentir todas as emoções - tristeza, raiva, culpa são normais",
-          "Compartilhe memórias e fotos com familiares e amigos que entendam",
-          "Considere criar uma homenagem - álbum de fotos, plantar uma árvore",
-          "Não se apresse em ter outro animal - respeite o seu tempo de luto",
-          "Procure apoio profissional se sentir dificuldade em lidar com a perda"
-        ]
-      }
-    ]
+    "title": "Veterinário ao domicílio: Vantagens, cuidados e quando escolher este serviço",
+    "metaDescription": "Descubra as vantagens do veterinário ao domicílio em Lisboa: menos stress para o animal, sem deslocações e consultas personalizadas. Saiba quando escolher este serviço.",
+    "article": {
+      "intro": [
+        "O serviço de veterinário ao domicílio tem vindo a ganhar relevância em Portugal, sobretudo em contextos urbanos, onde a falta de tempo, o stress associado às deslocações e a procura por maior conforto para os animais influenciam cada vez mais a escolha dos tutores.",
+        "Neste modelo de consulta veterinária ao domicílio, o médico veterinário desloca-se à residência do animal, permitindo uma avaliação mais calma, personalizada e adaptada ao seu comportamento no ambiente onde se sente mais seguro.",
+        "Mas em que situações este tipo de serviço é mais indicado e quais são as suas principais vantagens?"
+      ],
+      "sections": [
+        {
+          "heading": "O que é um veterinário ao domicílio?",
+          "content": [
+            { "type": "paragraph", "text": "Um veterinário ao domicílio é um profissional licenciado que presta cuidados de saúde animal no ambiente familiar do animal, incluindo:" },
+            { "type": "list", "items": ["Consultas gerais", "Vacinação", "Desparasitação interna e externa", "Avaliação de sintomas", "Cuidados paliativos", "Eutanásia em ambiente familiar"] },
+            { "type": "paragraph", "text": "Este modelo de atendimento elimina a necessidade de deslocação à clínica, sendo especialmente útil para animais mais sensíveis ou tutores com limitações de mobilidade ou tempo." }
+          ]
+        },
+        {
+          "heading": "Vantagens do veterinário ao domicílio",
+          "subsections": [
+            {
+              "heading": "1. Menos stress para o animal",
+              "content": [
+                { "type": "paragraph", "text": "Muitos animais, especialmente gatos e cães mais ansiosos, associam a transportadora e a viagem ao carro a experiências negativas." },
+                { "type": "paragraph", "text": "Em casa, o animal:" },
+                { "type": "list", "items": ["Permanece no seu ambiente seguro", "Evita ruídos, cheiros e outros animais desconhecidos", "Reduz significativamente os níveis de ansiedade"] },
+                { "type": "paragraph", "text": "Isto permite uma avaliação clínica mais calma e precisa." }
+              ]
+            },
+            {
+              "heading": "2. Redução do risco de doenças contagiosas",
+              "content": [
+                { "type": "paragraph", "text": "Nas clínicas veterinárias, especialmente em épocas de vacinação, existe maior circulação de animais doentes ou em fase de diagnóstico." },
+                { "type": "paragraph", "text": "Ao optar pelo domicílio:" },
+                { "type": "list", "items": ["Evita-se contacto com animais potencialmente infetados", "Reduz-se o risco de transmissão de doenças, especialmente em cachorros e gatinhos em fase de primo-vacinação"] }
+              ]
+            },
+            {
+              "heading": "3. Maior conforto e comodidade para o tutor",
+              "content": [
+                { "type": "paragraph", "text": "O serviço ao domicílio elimina:" },
+                { "type": "list", "items": ["Deslocações", "Tempo de espera em sala de espera", "Stress logístico (transportadora, transporte, estacionamento)"] },
+                { "type": "paragraph", "text": "É particularmente útil para pessoas com:" },
+                { "type": "list", "items": ["Horários de trabalho exigentes", "Mobilidade reduzida", "Vários animais em casa"] }
+              ]
+            },
+            {
+              "heading": "4. Avaliação mais completa do ambiente do animal",
+              "content": [
+                { "type": "paragraph", "text": "Uma vantagem muitas vezes subestimada é que o veterinário consegue observar o contexto real onde o animal vive." },
+                { "type": "paragraph", "text": "Isto permite:" },
+                { "type": "list", "items": ["Identificar fatores ambientais de stress", "Avaliar alimentação, higiene e segurança do espaço", "Perceber comportamentos que não surgem na clínica"] }
+              ]
+            },
+            {
+              "heading": "5. Ideal para animais idosos ou com mobilidade reduzida",
+              "content": [
+                { "type": "paragraph", "text": "Animais seniores ou com doenças crónicas podem ter dificuldade em:" },
+                { "type": "list", "items": ["Entrar e sair de transportadoras", "Suportar viagens", "Lidar com ambientes desconhecidos"] },
+                { "type": "paragraph", "text": "O atendimento em casa evita sofrimento desnecessário e torna o processo mais digno e confortável." }
+              ]
+            },
+            {
+              "heading": "6. Eutanásia em ambiente familiar",
+              "content": [
+                { "type": "paragraph", "text": "Em situações terminais, o domicílio permite um momento mais íntimo e tranquilo." },
+                { "type": "paragraph", "text": "Benefícios incluem:" },
+                { "type": "list", "items": ["Ambiente familiar e seguro", "Presença de todos os membros da família", "Menos stress para o animal nos últimos momentos"] }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Quando escolher veterinário ao domicílio?",
+          "content": [
+            { "type": "paragraph", "text": "Este serviço é especialmente indicado para:" },
+            { "type": "list", "items": ["Gatos muito stressados com deslocações", "Cães ansiosos ou agressivos em ambiente clínico", "Animais idosos ou com doenças crónicas", "Vacinações e consultas de rotina", "Situações de fim de vida", "Tutores com falta de disponibilidade para deslocações"] }
+          ]
+        },
+        {
+          "heading": "Limitações do serviço ao domicílio",
+          "content": [
+            { "type": "paragraph", "text": "Apesar das vantagens, é importante perceber que nem todos os casos podem ser resolvidos em casa." },
+            { "type": "paragraph", "text": "Pode ser necessário encaminhamento para clínica em situações como:" },
+            { "type": "list", "items": ["Cirurgias", "Exames complementares avançados (raio-X, análises complexas)", "Emergências graves"] }
+          ]
+        },
+        {
+          "heading": "Veterinário ao domicílio vs clínica veterinária",
+          "content": [
+            { "type": "paragraph", "text": "Ambos os modelos são complementares." },
+            { "type": "list", "items": ["A clínica é essencial para diagnóstico avançado e cirurgia", "O domicílio é ideal para conforto, prevenção e acompanhamento"] },
+            { "type": "paragraph", "text": "A escolha depende sempre da necessidade clínica do animal." }
+          ]
+        },
+        {
+          "heading": "Conclusão",
+          "content": [
+            { "type": "paragraph", "text": "O veterinário ao domicílio representa uma alternativa moderna, prática e mais confortável ao modelo tradicional de clínica." },
+            { "type": "paragraph", "text": "Quando bem aplicado, melhora a experiência do animal e do tutor, reduz o stress e permite uma abordagem mais personalizada da medicina veterinária." }
+          ]
+        }
+      ]
+    }
   }
 }

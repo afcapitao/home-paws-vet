@@ -7,7 +7,7 @@
     "area": "Service Area",
     "schedule": "Opening hours",
     "contacts": "Contacts",
-    "blog": "Pet Health Guide",
+    "blog": "Home Vet Service",
     "bookButton": "Book Now"
   },
   "hero": {
@@ -100,79 +100,109 @@
     "description": "I am a veterinarian, graduated from FMV-UTL, with over 10 years of experience in small companion animal clinics. I have a special interest in proximity care, focusing on welfare and quality of life, disease prevention, early diagnosis, and treatment. My mission is to provide home veterinary care, bringing comfort to animals and convenience to their owners."
   },
   "blog": {
-    "title": "Pet Health Guide",
-    "subtitle": "Guidelines and information to better care for your pet",
-    "posts": [
-      {
-        "title": "Benefits of Home Veterinary Visits",
-        "subtitle": "Discover the advantages of caring for your pet in the comfort of home",
-        "items": [
-          "Lower risk of contracting infectious diseases, especially during the initial vaccination period",
-          "Your pet does not get carsick or stressed by leaving its familiar environment",
-          "Owners save time on travel and waiting rooms — practical and convenient",
-          "More personalized and individual consultations, with greater attention to each pet",
-          "Ideal for elderly pets, those with reduced mobility, or those afraid to leave home",
-          "Humane euthanasia in terminal cases",
-          "The vet can more fully assess your pet's behavior and home environment"
-        ]
-      },
-      {
-        "title": "Benefits of Vaccination",
-        "subtitle": "Why vaccination is essential for your pet's health",
-        "items": [
-          "Protects your pet from several diseases, some of which can be fatal",
-          "Safety for your pet and the community: protects your pet, other animals, and public health",
-          "Routine vaccination contributes to a longer life and better quality of life",
-          "Prevention is always better and cheaper than treating serious illness"
-        ]
-      },
-      {
-        "title": "Helping Your Cat Overcome Fear of the Vet",
-        "subtitle": "Tips to make veterinary visits less stressful for cats",
-        "items": [
-          "Use a comfortable carrier and let your cat get used to it before the visit",
-          "Stay calm — cats sense their owner's anxiety",
-          "Consider home visits to eliminate the stress of travel",
-          "Reward good behavior with treats and affection",
-          "Avoid long fasting before the consultation unless necessary"
-        ]
-      },
-      {
-        "title": "Exercising with Your Best Friend",
-        "subtitle": "Tips to keep your dog active and healthy",
-        "items": [
-          "Adapted walks are the universal exercise for every dog",
-          "Mental stimulation also tires and trains — use interactive toys",
-          "Running is for athletic, well-conditioned dogs — always build up gradually",
-          "Tug-of-war builds confidence and muscle (teach the 'drop' and 'wait' commands)",
-          "Short training sessions are tiring (sit, lie down, paw for 5–10 minutes with positive reinforcement)",
-          "The greatest sign of love is respecting your dog's limits — watch for signs of fatigue"
-        ]
-      },
-      {
-        "title": "Obesity in Pets",
-        "subtitle": "How to prevent and tackle excess weight in pets",
-        "items": [
-          "Regular body condition assessment with a vet is essential",
-          "Control food access — avoid free feeding",
-          "Promote frequent physical activity adapted to your pet",
-          "Technology like smart collars can help with monitoring",
-          "Choose healthy treats, such as appropriate fruits and vegetables",
-          "Obesity can lead to diabetes, joint problems, and a shorter life expectancy"
-        ]
-      },
-      {
-        "title": "Coping with the Loss of a Pet",
-        "subtitle": "Emotional support for owners who have lost their companions",
-        "items": [
-          "Grief for the loss of a pet is real and should be respected",
-          "Allow yourself to feel all emotions — sadness, anger, and guilt are normal",
-          "Share memories and photos with family and friends who understand",
-          "Consider creating a tribute — a photo album, planting a tree",
-          "Do not rush into getting another pet — respect your grieving time",
-          "Seek professional support if you struggle to cope with the loss"
-        ]
-      }
-    ]
+    "title": "Home Vet: Benefits, Care and When to Choose This Service",
+    "metaDescription": "Discover the benefits of home vet services in Lisbon: less stress for your pet, no travel required and personalised consultations. Find out when to choose this service.",
+    "article": {
+      "intro": [
+        "Home veterinary services have been gaining relevance in Portugal, especially in urban settings, where lack of time, the stress associated with travel, and the demand for greater comfort for animals increasingly influence owners' choices.",
+        "In this home veterinary consultation model, the vet travels to the animal's home, allowing for a calmer, more personalised assessment tailored to its behaviour in the environment where it feels most at ease.",
+        "But in which situations is this type of service most recommended, and what are its main advantages?"
+      ],
+      "sections": [
+        {
+          "heading": "What is a home vet?",
+          "content": [
+            { "type": "paragraph", "text": "A home vet is a licensed professional who provides animal healthcare in the pet's home environment, including:" },
+            { "type": "list", "items": ["General consultations", "Vaccination", "Internal and external deworming", "Symptom assessment", "Palliative care", "Euthanasia in a familiar environment"] },
+            { "type": "paragraph", "text": "This care model eliminates the need to travel to a clinic, and is especially useful for more sensitive animals or owners with mobility or time constraints." }
+          ]
+        },
+        {
+          "heading": "Benefits of a home vet",
+          "subsections": [
+            {
+              "heading": "1. Less stress for the animal",
+              "content": [
+                { "type": "paragraph", "text": "Many animals, especially anxious cats and dogs, associate the carrier and car journey with negative experiences." },
+                { "type": "paragraph", "text": "At home, the animal:" },
+                { "type": "list", "items": ["Stays in its safe environment", "Avoids unfamiliar noises, smells, and other animals", "Significantly reduces anxiety levels"] },
+                { "type": "paragraph", "text": "This allows for a calmer, more accurate clinical assessment." }
+              ]
+            },
+            {
+              "heading": "2. Reduced risk of contagious diseases",
+              "content": [
+                { "type": "paragraph", "text": "At veterinary clinics, especially during vaccination seasons, there is greater circulation of sick or undiagnosed animals." },
+                { "type": "paragraph", "text": "By opting for home visits:" },
+                { "type": "list", "items": ["Contact with potentially infected animals is avoided", "The risk of disease transmission is reduced, especially for puppies and kittens during their initial vaccination period"] }
+              ]
+            },
+            {
+              "heading": "3. Greater comfort and convenience for the owner",
+              "content": [
+                { "type": "paragraph", "text": "The home service eliminates:" },
+                { "type": "list", "items": ["Travelling", "Waiting room time", "Logistical stress (carrier, transport, parking)"] },
+                { "type": "paragraph", "text": "It is particularly useful for people with:" },
+                { "type": "list", "items": ["Demanding work schedules", "Reduced mobility", "Multiple pets at home"] }
+              ]
+            },
+            {
+              "heading": "4. More complete assessment of the animal's environment",
+              "content": [
+                { "type": "paragraph", "text": "An often underestimated advantage is that the vet can observe the actual environment where the animal lives." },
+                { "type": "paragraph", "text": "This allows:" },
+                { "type": "list", "items": ["Identifying environmental stress factors", "Assessing diet, hygiene, and space safety", "Understanding behaviours that don't appear in the clinic"] }
+              ]
+            },
+            {
+              "heading": "5. Ideal for elderly or mobility-impaired animals",
+              "content": [
+                { "type": "paragraph", "text": "Senior animals or those with chronic conditions may struggle with:" },
+                { "type": "list", "items": ["Getting in and out of carriers", "Enduring journeys", "Coping with unfamiliar environments"] },
+                { "type": "paragraph", "text": "Home care avoids unnecessary suffering and makes the process more dignified and comfortable." }
+              ]
+            },
+            {
+              "heading": "6. Euthanasia in a familiar environment",
+              "content": [
+                { "type": "paragraph", "text": "In terminal situations, home care allows for a more intimate and peaceful moment." },
+                { "type": "paragraph", "text": "Benefits include:" },
+                { "type": "list", "items": ["Familiar and safe environment", "Presence of all family members", "Less stress for the animal in its final moments"] }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "When to choose a home vet?",
+          "content": [
+            { "type": "paragraph", "text": "This service is especially recommended for:" },
+            { "type": "list", "items": ["Cats that are very stressed by travel", "Anxious or aggressive dogs in clinical settings", "Elderly or chronically ill animals", "Vaccinations and routine check-ups", "End-of-life situations", "Owners with limited availability for travel"] }
+          ]
+        },
+        {
+          "heading": "Limitations of the home service",
+          "content": [
+            { "type": "paragraph", "text": "Despite the advantages, it is important to understand that not all cases can be resolved at home." },
+            { "type": "paragraph", "text": "Referral to a clinic may be necessary in situations such as:" },
+            { "type": "list", "items": ["Surgeries", "Advanced diagnostic tests (X-rays, complex analyses)", "Serious emergencies"] }
+          ]
+        },
+        {
+          "heading": "Home vet vs veterinary clinic",
+          "content": [
+            { "type": "paragraph", "text": "Both models are complementary." },
+            { "type": "list", "items": ["The clinic is essential for advanced diagnosis and surgery", "Home visits are ideal for comfort, prevention, and follow-up"] },
+            { "type": "paragraph", "text": "The choice always depends on the animal's clinical needs." }
+          ]
+        },
+        {
+          "heading": "Conclusion",
+          "content": [
+            { "type": "paragraph", "text": "The home vet represents a modern, practical, and more comfortable alternative to the traditional clinic model." },
+            { "type": "paragraph", "text": "When well applied, it improves the experience for both the animal and the owner, reduces stress, and allows for a more personalised approach to veterinary medicine." }
+          ]
+        }
+      ]
+    }
   }
 }
