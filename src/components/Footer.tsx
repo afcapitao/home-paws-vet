@@ -76,7 +76,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span>Lisboa Oriental e Norte, Loures, Vila Franca de Xira</span>
+                <span>{t("footer.locationValue")}</span>
               </li>
             </ul>
           </div>
