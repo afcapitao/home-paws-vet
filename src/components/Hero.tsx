@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Clock, MapPin, CheckCircle2, Stethoscope } from "lucide-react";
+import { Clock, MapPin, CheckCircle2 } from "lucide-react";
 import heroImage from "@/assets/hero-vet.png";
 import { AppointmentForm } from "@/components/AppointmentForm";
 import { useTranslation } from "react-i18next";
@@ -35,16 +35,6 @@ const Hero = () => {
                 className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-secondary/10 mix-blend-soft-light"
                 aria-hidden="true"
               />
-              {/* Floating credential badge */}
-              <div className="absolute bottom-4 left-4 flex items-center gap-2.5 rounded-xl bg-background/95 backdrop-blur-sm px-4 py-2.5 shadow-soft">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-hero">
-                  <Stethoscope className="h-5 w-5 text-primary" />
-                </div>
-                <div className="leading-tight">
-                  <p className="text-sm font-semibold text-foreground">{t("hero.badgeTitle")}</p>
-                  <p className="text-xs text-muted-foreground">{t("hero.badgeSubtitle")}</p>
-                </div>
-              </div>
             </div>
           </div>
 
