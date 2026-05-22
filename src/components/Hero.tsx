@@ -70,7 +70,13 @@ const Hero = () => {
                 </Button>
               </AppointmentForm>
               <p className="mt-3 text-sm text-muted-foreground">
-                {t("hero.bookingInfo")}
+                {t("hero.bookingInfo")}{" "}
+                <a
+                  href="tel:+351911135981"
+                  className="font-medium text-foreground hover:text-primary transition-colors"
+                >
+                  911 135 981
+                </a>
               </p>
             </div>
 
