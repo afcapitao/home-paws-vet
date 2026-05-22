@@ -26,7 +26,9 @@
     "location": "Lisboa Oriental e Norte, Loures e Vila Franca de Xira",
     "locationLabel": "Área geográfica de atuação:",
     "hours": "2ªf a 6ªf das 10h às 18h",
-    "hoursLabel": "Horário de Atendimento:"
+    "hoursLabel": "Horário de Atendimento:",
+    "badgeTitle": "+10 anos",
+    "badgeSubtitle": "de experiência clínica"
   },
   "services": {
     "title": "Serviços",
@@ -43,17 +45,17 @@
       "title": "Vacinação e Desparasitação",
       "description": "Plano vacinal personalizado e desparasitação regular, essencial para manter o seu animal saudável."
     },
+    "labTests": {
+      "title": "Análises Laboratoriais",
+      "description": "Colheita de amostras para análises clínicas, sempre que possível ao domicílio, para diagnóstico e acompanhamento da saúde do seu animal."
+    },
     "healthCertificate": {
       "title": "Atestados de saúde e Passaporte",
       "description": "Emissão de atestado de saúde e passaporte europeu, permitindo viajar com segurança e tranquilidade."
     },
-    "otherServices": {
-      "title": "Outros serviços (sob consulta):",
-      "labTests": "Exames complementares (laboratoriais, imagiologia), Cirurgias, Eutanásia",
-      "labTestsNote": "",
-      "imaging": "",
-      "surgery": "",
-      "footnote": "*Quando indicado, alguns destes serviços são realizados com o apoio de colegas especialistas ou em clínicas parceiras."
+    "euthanasia": {
+      "title": "Eutanásia",
+      "description": "Um adeus sereno e digno, no ambiente familiar do seu animal e junto de quem o ama, evitando o stress de uma deslocação à clínica."
     },
     "bookButton": "Agendar Consulta"
   },

@@ -1,11 +1,10 @@
 import ServiceCard from "./ServiceCard";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope, Syringe, Radio, FileText, ClipboardList } from "lucide-react";
+import { Stethoscope, Syringe, Radio, FileText, TestTubes, Feather } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ServicesSection = () => {
   const { t } = useTranslation();
-  
+
   const services = [
     {
       icon: Stethoscope,
@@ -18,6 +17,11 @@ const ServicesSection = () => {
       description: t("services.prophylaxis.description"),
     },
     {
+      icon: TestTubes,
+      title: t("services.labTests.title"),
+      description: t("services.labTests.description"),
+    },
+    {
       icon: Radio,
       title: t("services.microchip.title"),
       description: t("services.microchip.description"),
@@ -27,9 +31,12 @@ const ServicesSection = () => {
       title: t("services.healthCertificate.title"),
       description: t("services.healthCertificate.description"),
     },
+    {
+      icon: Feather,
+      title: t("services.euthanasia.title"),
+      description: t("services.euthanasia.description"),
+    },
   ];
-
-  
 
   return (
     <section id="servicos" className="py-16 bg-background scroll-mt-16">
@@ -43,28 +50,15 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
+            <div
+              key={index}
+              className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+            >
+              <ServiceCard {...service} />
+            </div>
           ))}
-          
-          {/* Other Services Card */}
-          <Card className="hover:shadow-medium transition-all hover:-translate-y-1 border-border">
-            <CardHeader>
-              <div className="mb-4 inline-flex p-3 bg-gradient-hero rounded-lg">
-                <ClipboardList className="h-6 w-6 text-primary" />
-              </div>
-              <CardTitle className="text-xl">{t("services.otherServices.title")}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground text-base leading-relaxed text-justify">
-                {t("services.otherServices.labTests")}
-              </p>
-              <p className="mt-4 text-xs text-muted-foreground italic text-justify">
-                {t("services.otherServices.footnote")}
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

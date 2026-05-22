@@ -37,114 +37,98 @@ const Navbar = () => {
     return location.pathname === path;
   };
 
+  const NavLink = ({ item, onClick }: { item: typeof menuItems[0]; onClick?: () => void }) => {
+    const activeClass = isActive(item.path)
+      ? "text-primary font-medium"
+      : "text-muted-foreground hover:text-foreground";
+    const baseClass = `text-sm transition-colors whitespace-nowrap ${activeClass}`;
+
+    if (item.path.startsWith("/#")) {
+      return (
+        <a href={item.path} className={baseClass} onClick={onClick}>
+          {item.name}
+        </a>
+      );
+    }
+    return (
+      <Link
+        to={item.path}
+        className={baseClass}
+        onClick={() => {
+          onClick?.();
+          if (item.path === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+      >
+        {item.name}
+      </Link>
+    );
+  };
+
   return (
-    <nav className="sticky top-0 z-50 bg-background border-b border-border">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo and Menu */}
-          <div className="flex items-center gap-4">
-            {/* Logo first */}
-            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity -ml-2">
-              <img src={logo} alt="Pet Home Vet" className="h-14 md:h-16 w-auto" />
-            </Link>
+        <div className="flex items-center justify-between h-16 gap-4">
+          {/* Logo */}
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity shrink-0">
+            <img src={logo} alt="Pet Home Vet" className="h-12 w-auto" />
+          </Link>
 
-            {/* Mobile menu button */}
-            <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
-                {menuItems.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    {item.path.startsWith('/#') ? (
-                      <a
-                        href={item.path}
-                        className={`cursor-pointer ${
-                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
-                        }`}
-                      >
-                        {item.name}
-                      </a>
-                    ) : (
-                      <Link
-                        to={item.path}
-                        onClick={() => item.path === "/" && window.scrollTo({ top: 0, behavior: "smooth" })}
-                        className={`cursor-pointer ${
-                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
-                        }`}
-                      >
-                        {item.name}
-                      </Link>
-                    )}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            {/* Desktop menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild className="hidden md:flex">
-                <Button variant="ghost">
-                  <Menu className="h-5 w-5 mr-2" />
-                  {t("nav.menu")}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-56 bg-popover z-50">
-                {menuItems.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    {item.path.startsWith('/#') ? (
-                      <a
-                        href={item.path}
-                        className={`cursor-pointer ${
-                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
-                        }`}
-                      >
-                        {item.name}
-                      </a>
-                    ) : (
-                      <Link
-                        to={item.path}
-                        onClick={() => item.path === "/" && window.scrollTo({ top: 0, behavior: "smooth" })}
-                        className={`cursor-pointer ${
-                          isActive(item.path) ? "bg-accent text-accent-foreground font-medium" : ""
-                        }`}
-                      >
-                        {item.name}
-                      </Link>
-                    )}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+          {/* Desktop nav links */}
+          <div className="hidden xl:flex items-center gap-5 flex-1 justify-center">
+            {menuItems.map((item) => (
+              <NavLink key={item.path} item={item} />
+            ))}
           </div>
 
-          {/* Language Buttons & CTA */}
-          <div className="flex items-center gap-2">
+          {/* Right side: Language toggle + CTA + Mobile menu */}
+          <div className="flex items-center gap-2 shrink-0">
             <div className="flex items-center gap-1 border border-border rounded-md p-1">
               <Button
-                variant={i18n.language === 'pt' ? 'default' : 'ghost'}
+                variant={i18n.language === "pt" ? "default" : "ghost"}
                 size="sm"
-                onClick={() => changeLanguage('pt')}
-                className="h-8 px-2 sm:px-3 text-xs"
+                onClick={() => changeLanguage("pt")}
+                className="h-7 px-2 text-xs"
               >
                 PT
               </Button>
               <Button
-                variant={i18n.language === 'en' ? 'default' : 'ghost'}
+                variant={i18n.language === "en" ? "default" : "ghost"}
                 size="sm"
-                onClick={() => changeLanguage('en')}
-                className="h-8 px-2 sm:px-3 text-xs"
+                onClick={() => changeLanguage("en")}
+                className="h-7 px-2 text-xs"
               >
                 EN
               </Button>
             </div>
+
             <AppointmentForm>
-              <Button variant="hero" size="sm" className="text-xs sm:text-sm">
+              <Button variant="hero" size="sm" className="hidden sm:flex text-xs sm:text-sm">
                 {t("nav.bookButton")}
               </Button>
             </AppointmentForm>
+
+            {/* Mobile hamburger */}
+            <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="xl:hidden">
+                  {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56 bg-popover z-50">
+                {menuItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <NavLink item={item} onClick={() => setIsOpen(false)} />
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuItem asChild>
+                  <AppointmentForm>
+                    <button className="w-full text-left cursor-pointer text-sm font-medium text-primary px-2 py-1.5">
+                      {t("nav.bookButton")}
+                    </button>
+                  </AppointmentForm>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>

@@ -25,28 +25,25 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link 
-                  to="/#quem-sou" 
+                <a
+                  href="/#quem-sou"
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.scrollTo(0, 0)}
                 >
                   {t("nav.about")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link 
-                  to="/#servicos" 
+                <a
+                  href="/#servicos"
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.scrollTo(0, 0)}
                 >
                   {t("nav.services")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link 
-                  to="/blog" 
+                <Link
+                  to="/blog"
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => window.scrollTo(0, 0)}
                 >
                   {t("nav.blog")}
                 </Link>
@@ -58,7 +55,7 @@ const Footer = () => {
           <div id="contactos">
             <h3 className="font-semibold text-foreground mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2 text-muted-foreground" id="horario">
+              <li className="flex items-start gap-2 text-muted-foreground">
                 <Clock className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>{t("hero.hours")}</span>
               </li>

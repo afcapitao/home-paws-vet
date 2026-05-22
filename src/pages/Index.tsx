@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
@@ -26,6 +27,7 @@ const Index = () => {
       <main className="flex-1">
         <Hero />
         <ServicesSection />
+        <TestimonialsSection />
         <AboutSection />
       </main>
       <Footer />
