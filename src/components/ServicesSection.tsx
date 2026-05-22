@@ -1,6 +1,6 @@
 import ServiceCard from "./ServiceCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope, Syringe, Radio, FileText, MoreHorizontal } from "lucide-react";
+import { Stethoscope, Syringe, Radio, FileText, ClipboardList } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ServicesSection = () => {
@@ -52,7 +52,7 @@ const ServicesSection = () => {
           <Card className="hover:shadow-medium transition-all hover:-translate-y-1 border-border">
             <CardHeader>
               <div className="mb-4 inline-flex p-3 bg-gradient-hero rounded-lg">
-                <MoreHorizontal className="h-6 w-6 text-primary" />
+                <ClipboardList className="h-6 w-6 text-primary" />
               </div>
               <CardTitle className="text-xl">{t("services.otherServices.title")}</CardTitle>
             </CardHeader>
