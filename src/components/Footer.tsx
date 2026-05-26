@@ -42,7 +42,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/blog"
+                  to="/veterinario-ao-domicilio"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {t("nav.blog")}
