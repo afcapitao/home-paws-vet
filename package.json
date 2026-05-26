@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mkdir -p dist/veterinario-ao-domicilio && cp dist/index.html dist/veterinario-ao-domicilio/index.html",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "predeploy": "npm run build",
