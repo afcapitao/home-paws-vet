@@ -37,47 +37,47 @@ const Navbar = () => {
     return location.pathname === path;
   };
 
-  const NavLink = ({ item, onClick }: { item: typeof menuItems[0]; onClick?: () => void }) => {
-    const activeClass = isActive(item.path)
-      ? "text-primary font-medium"
-      : "text-muted-foreground hover:text-foreground";
-    const baseClass = `text-sm transition-colors whitespace-nowrap ${activeClass}`;
-
-    if (item.path.startsWith("/#")) {
-      return (
-        <a href={item.path} className={baseClass} onClick={onClick}>
-          {item.name}
-        </a>
-      );
-    }
-    return (
-      <Link
-        to={item.path}
-        className={baseClass}
-        onClick={() => {
-          onClick?.();
-          if (item.path === "/") window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-      >
-        {item.name}
-      </Link>
-    );
-  };
-
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 gap-4">
+
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity shrink-0">
             <img src={logo} alt="Pet Home Vet" className="h-12 w-auto" />
           </Link>
 
-          {/* Desktop nav links */}
-          <div className="hidden xl:flex items-center gap-5 flex-1 justify-center">
-            {menuItems.map((item) => (
-              <NavLink key={item.path} item={item} />
-            ))}
+          {/* Desktop nav links — visible from lg (1024px) */}
+          <div className="hidden lg:flex items-center gap-3 xl:gap-5 flex-1 justify-center">
+            {menuItems.map((item) => {
+              const activeClass = isActive(item.path)
+                ? "text-primary font-medium"
+                : "text-muted-foreground hover:text-foreground";
+
+              if (item.path.startsWith("/#")) {
+                return (
+                  <a
+                    key={item.path}
+                    href={item.path}
+                    className={`text-xs xl:text-sm transition-colors whitespace-nowrap ${activeClass}`}
+                  >
+                    {item.name}
+                  </a>
+                );
+              }
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-xs xl:text-sm transition-colors whitespace-nowrap ${activeClass}`}
+                  onClick={() => {
+                    if (item.path === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Right side: Language toggle + CTA + Mobile menu */}
@@ -107,29 +107,45 @@ const Navbar = () => {
               </Button>
             </AppointmentForm>
 
-            {/* Mobile hamburger */}
+            {/* Hamburger — only on mobile (< lg) */}
             <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="xl:hidden">
+                <Button variant="ghost" size="icon" className="lg:hidden">
                   {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56 bg-popover z-50">
                 {menuItems.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <NavLink item={item} onClick={() => setIsOpen(false)} />
+                  <DropdownMenuItem key={item.path} asChild>
+                    {item.path.startsWith("/#") ? (
+                      <a href={item.path} onClick={() => setIsOpen(false)}>
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={item.path}
+                        onClick={() => {
+                          setIsOpen(false);
+                          if (item.path === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </DropdownMenuItem>
                 ))}
-                <DropdownMenuItem asChild>
+                <DropdownMenuItem
+                  onSelect={(e) => e.preventDefault()}
+                  className="font-medium text-primary cursor-pointer"
+                >
                   <AppointmentForm>
-                    <button className="w-full text-left cursor-pointer text-sm font-medium text-primary px-2 py-1.5">
-                      {t("nav.bookButton")}
-                    </button>
+                    <span className="w-full">{t("nav.bookButton")}</span>
                   </AppointmentForm>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
+
         </div>
       </div>
     </nav>
