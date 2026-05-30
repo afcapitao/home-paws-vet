@@ -37,6 +37,18 @@ const LanguageSync = () => {
   return null;
 };
 
+const LangFromUrl = () => {
+  const { i18n } = useTranslation();
+  const { search } = useLocation();
+  useEffect(() => {
+    const lang = new URLSearchParams(search).get("lang");
+    if (lang === "en" || lang === "pt") {
+      i18n.changeLanguage(lang);
+    }
+  }, [search, i18n]);
+  return null;
+};
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
@@ -46,6 +58,7 @@ const App = () => (
         <BrowserRouter basename="/">
           <ScrollToTop />
           <LanguageSync />
+          <LangFromUrl />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/veterinario-ao-domicilio" element={<Blog />} />

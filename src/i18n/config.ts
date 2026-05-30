@@ -3,6 +3,9 @@ import { initReactI18next } from 'react-i18next';
 import pt from './locales/pt.json';
 import en from './locales/en.json';
 
+const urlLang = new URLSearchParams(window.location.search).get('lang');
+const initialLang = urlLang === 'en' ? 'en' : 'pt';
+
 i18n
   .use(initReactI18next)
   .init({
@@ -10,7 +13,7 @@ i18n
       pt: { translation: pt },
       en: { translation: en },
     },
-    lng: 'pt',
+    lng: initialLang,
     fallbackLng: 'pt',
     interpolation: {
       escapeValue: false,
