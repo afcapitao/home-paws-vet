@@ -9,23 +9,23 @@ const indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8');
 const blogHtml = indexHtml
   .replace(
     /<link rel="canonical" href="https:\/\/pethomevet\.pt\/" \/>/,
-    '<link rel="canonical" href="https://pethomevet.pt/veterinario-ao-domicilio" />'
+    '<link rel="canonical" href="https://pethomevet.pt/veterinario-ao-domicilio/" />'
   )
   .replace(
     /<link rel="alternate" hreflang="pt" href="https:\/\/pethomevet\.pt\/" \/>/,
-    '<link rel="alternate" hreflang="pt" href="https://pethomevet.pt/veterinario-ao-domicilio" />'
+    '<link rel="alternate" hreflang="pt" href="https://pethomevet.pt/veterinario-ao-domicilio/" />'
   )
   .replace(
     /<link rel="alternate" hreflang="en" href="https:\/\/pethomevet\.pt\/\?lang=en" \/>/,
-    '<link rel="alternate" hreflang="en" href="https://pethomevet.pt/veterinario-ao-domicilio?lang=en" />'
+    '<link rel="alternate" hreflang="en" href="https://pethomevet.pt/veterinario-ao-domicilio/?lang=en" />'
   )
   .replace(
     /<link rel="alternate" hreflang="x-default" href="https:\/\/pethomevet\.pt\/" \/>/,
-    '<link rel="alternate" hreflang="x-default" href="https://pethomevet.pt/veterinario-ao-domicilio" />'
+    '<link rel="alternate" hreflang="x-default" href="https://pethomevet.pt/veterinario-ao-domicilio/" />'
   )
   .replace(
     /<meta property="og:url" content="https:\/\/pethomevet\.pt\/" \/>/,
-    '<meta property="og:url" content="https://pethomevet.pt/veterinario-ao-domicilio" />'
+    '<meta property="og:url" content="https://pethomevet.pt/veterinario-ao-domicilio/" />'
   );
 
 const outDir = join(distDir, 'veterinario-ao-domicilio');

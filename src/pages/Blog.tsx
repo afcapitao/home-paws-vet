@@ -51,8 +51,8 @@ const Blog = () => {
   const pageTitle = `${t("blog.title")} | Pet Home Vet`;
   const metaDescription = t("blog.metaDescription");
   const lang = i18n.language === "en" ? "en" : "pt";
-  const canonicalUrl = "https://pethomevet.pt/veterinario-ao-domicilio";
-  const canonicalUrlEn = "https://pethomevet.pt/veterinario-ao-domicilio?lang=en";
+  const canonicalUrl = "https://pethomevet.pt/veterinario-ao-domicilio/";
+  const canonicalUrlEn = "https://pethomevet.pt/veterinario-ao-domicilio/?lang=en";
 
   const articleSchema = {
     "@context": "https://schema.org",
