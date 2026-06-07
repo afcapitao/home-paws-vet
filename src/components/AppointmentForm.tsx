@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useTranslation } from "react-i18next";
+import { trackEvent } from "@/lib/analytics";
 import {
   Dialog,
   DialogContent,
@@ -83,6 +84,7 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
       });
 
       if (response.ok) {
+        trackEvent("appointment_submit", { event_category: "lead" });
         setOpen(false);
         form.reset();
         alert(t("appointment.success"));
@@ -97,7 +99,13 @@ export function AppointmentForm({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog
+        open={open}
+        onOpenChange={(val) => {
+          if (val) trackEvent("appointment_open", { event_category: "lead" });
+          setOpen(val);
+        }}
+      >
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[460px] max-h-[85vh] overflow-y-auto">
         <DialogHeader>

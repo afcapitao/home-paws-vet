@@ -2,6 +2,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.webp";
+import { trackEvent } from "@/lib/analytics";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -67,7 +68,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="mailto:consultas@pethomevet.pt" className="hover:text-primary transition-colors">
+                <a
+                  href="mailto:consultas@pethomevet.pt"
+                  onClick={() => trackEvent("email_click", { event_category: "lead" })}
+                  className="hover:text-primary transition-colors"
+                >
                   consultas@pethomevet.pt
                 </a>
               </li>
