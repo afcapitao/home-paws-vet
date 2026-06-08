@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sI \"https://pethomevet.pt/veterinario-ao-domicilio/\")",
+      "Bash(curl -sI \"https://pethomevet.pt\")",
+      "Bash(curl -sI \"https://pethomevet.pt/\")"
+    ]
+  }
+}
